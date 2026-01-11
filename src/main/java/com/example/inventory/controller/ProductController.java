@@ -1,28 +1,58 @@
 package com.example.inventory.controller;
 
+import com.example.inventory.dto.ProductRequest;
 import com.example.inventory.entity.Product;
 import com.example.inventory.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity; // Better return type for CRUD
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController // Concept: Tells Spring this handles Web Requests & returns JSON
-@RequestMapping("/api/products") // Concept: All URLs start with /api/products
-// CORS: Allows your React frontend (on port 5173) to talk to this backend
+@RestController
+@RequestMapping("/api/products")
 @CrossOrigin(origins = "http://localhost:5173")
 public class ProductController {
 
     @Autowired
-    private ProductService service;
+    private ProductService productService;
 
+    // GET ALL
     @GetMapping
     public List<Product> getAll() {
-        return service.getAllProducts();
+        return productService.getAllProducts();
     }
 
+    // GET ONE
+    @GetMapping("/{id}")
+    public Product getOne(@PathVariable Long id) {
+        return productService.getProductById(id);
+    }
+
+    // CREATE
     @PostMapping
-    public Product add(@RequestBody Product product) {
-        return service.saveProduct(product);
+    public Product createProduct(@RequestBody ProductRequest request) {
+        return productService.addProduct(request);
+    }
+
+    // UPDATE
+    @PutMapping("/{id}")
+    public Product updateProduct(@PathVariable Long id, @RequestBody ProductRequest request) {
+        return productService.updateProduct(id, request);
+    }
+
+    // DELETE
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteProduct(@PathVariable Long id) {
+        productService.deleteProduct(id);
+        return ResponseEntity.noContent().build(); // Returns "204 No Content" (Standard for delete)
+    }
+
+    // STOCK UPDATE (PATCH)
+    // Usage: PATCH /api/products/1/stock?quantity=5 (Add 5)
+    // Usage: PATCH /api/products/1/stock?quantity=-2 (Sell 2)
+    @PatchMapping("/{id}/stock")
+    public Product updateStock(@PathVariable Long id, @RequestParam int quantity) {
+        return productService.updateStock(id, quantity);
     }
 }

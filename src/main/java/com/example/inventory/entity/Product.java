@@ -2,19 +2,28 @@ package com.example.inventory.entity;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import java.math.BigDecimal; // Better for money than Double
 
-@Entity // Concept: Tells Hibernate "This class is a database table"
-@Data   // Concept: Lombok automatically generates Getters/Setters (less typing!)
-@Table(name = "products") // Concept: Name the table "products" instead of "product"
+@Entity
+@Data
+@Table(name = "products")
 public class Product {
 
-    @Id // Concept: Primary Key
-    @GeneratedValue(strategy = GenerationType.IDENTITY) // Concept: Auto-increment (1, 2, 3...)
-    private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id; // Matches "product_id"
 
-    @Column(nullable = false) // Concept: Validation constraint at DB level
     private String name;
+
+    @Column(unique = true) // SKU must be unique
+    private String sku; // <--- ADDED THIS
 
     private Double price;
     private Integer quantity;
+
+    private String description; // <--- ADDED THIS
+
+    @ManyToOne
+    @JoinColumn(name = "category_id")
+    private Category category;
 }
