@@ -4,7 +4,7 @@ import com.example.inventory.dto.ProductRequest;
 import com.example.inventory.entity.Product;
 import com.example.inventory.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity; // Better return type for CRUD
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -40,9 +40,8 @@ public class ProductController {
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteProduct(@PathVariable Long id) {
         productService.deleteProduct(id);
-        return ResponseEntity.noContent().build(); // Returns "204 No Content" (Standard for delete)
+        return ResponseEntity.noContent().build();
     }
-
 
     @PatchMapping("/{id}/stock")
     public Product updateStock(@PathVariable Long id, @RequestParam int quantity) {
