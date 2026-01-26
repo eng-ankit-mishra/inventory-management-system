@@ -4,7 +4,7 @@ import {BrowserRouter,Route,Routes} from "react-router"
 import Dashboard from "./pages/Dashboard.jsx";
 import Product from "./pages/Product.jsx";
 import LoginPage from "./pages/LoginPage.jsx";
-import SignUpPage from "./pages/SignupPage.jsx";
+import SignUpPage from "./pages/SignUpPage.jsx";
 
 export default function App(){
     return (
