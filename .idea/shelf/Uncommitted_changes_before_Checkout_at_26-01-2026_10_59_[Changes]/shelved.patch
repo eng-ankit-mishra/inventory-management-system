@@ -1,0 +1,148 @@
+Index: frontend/src/components/ProductController.jsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import Button from \"./Button.jsx\";\r\n\r\nexport default function ProductController() {\r\n    return (\r\n        <main className={\"product-controller\"}>\r\n            <div className={\"product-controller-selector\"}>\r\n                <input placeholder={\"Search by Name or SKU\"}/>\r\n                <span>Filter by Category</span>\r\n                <span>Stock Status</span>\r\n            </div>\r\n            <Button> + New Product</Button>\r\n        </main>\r\n    )\r\n}
+===================================================================
+diff --git a/frontend/src/components/ProductController.jsx b/frontend/src/components/ProductController.jsx
+--- a/frontend/src/components/ProductController.jsx	(revision b56f7f31f80753058b6e667b9d89e69dc5863c27)
++++ b/frontend/src/components/ProductController.jsx	(date 1769348212987)
+@@ -4,9 +4,19 @@
+     return (
+         <main className={"product-controller"}>
+             <div className={"product-controller-selector"}>
+-                <input placeholder={"Search by Name or SKU"}/>
+-                <span>Filter by Category</span>
+-                <span>Stock Status</span>
++                <input className={"product-search"} placeholder={"Search by Name or SKU"}/>
++                <select className="filter-select">
++                    <option>Category</option>
++                    <option>TV</option>
++                    <option>Mobile</option>
++                    <option>Camera</option>
++                </select>
++                <select className="stock-select">
++                    <option>Stock</option>
++                    <option>In Stock</option>
++                    <option>Out Of Stock</option>
++                    <option>Low Stock</option>
++                </select>
+             </div>
+             <Button> + New Product</Button>
+         </main>
+Index: frontend/src/components/features.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>export const featuresData = [\r\n    {\r\n        id: 1,\r\n        title: \"Real-time\",\r\n        description: \"Experience instant synchronization across all devices. Our system updates data live as it happens, ensuring you and your team are always viewing the most current information without manual refreshes.\"\r\n    },\r\n    {\r\n        id: 2,\r\n        title: \"Secure-data\",\r\n        description: \"Your privacy is our priority. We employ end-to-end encryption and industry-standard security protocols to ensure your sensitive information remains protected against unauthorized access at all times.\"\r\n    },\r\n    {\r\n        id: 3,\r\n        title: \"Analytics\",\r\n        description: \"Gain valuable insights with comprehensive dashboards. Visualize your performance metrics, track key trends, and make data-driven decisions to optimize your workflow and productivity.\"\r\n    }\r\n];\r\n\r\n\r\n\r\n\r\n
+===================================================================
+diff --git a/frontend/src/components/features.js b/frontend/src/components/features.js
+--- a/frontend/src/components/features.js	(revision b56f7f31f80753058b6e667b9d89e69dc5863c27)
++++ b/frontend/src/components/features.js	(date 1769346258119)
+@@ -2,17 +2,20 @@
+     {
+         id: 1,
+         title: "Real-time",
+-        description: "Experience instant synchronization across all devices. Our system updates data live as it happens, ensuring you and your team are always viewing the most current information without manual refreshes."
++        description: "Experience instant synchronization across all devices. Our system updates data live as it happens, ensuring you and your team are always viewing the most current information without manual refreshes.",
++        variant: "blue"
+     },
+     {
+         id: 2,
+         title: "Secure-data",
+-        description: "Your privacy is our priority. We employ end-to-end encryption and industry-standard security protocols to ensure your sensitive information remains protected against unauthorized access at all times."
++        description: "Your privacy is our priority. We employ end-to-end encryption and industry-standard security protocols to ensure your sensitive information remains protected against unauthorized access at all times.",
++        variant: "green"
+     },
+     {
+         id: 3,
+         title: "Analytics",
+-        description: "Gain valuable insights with comprehensive dashboards. Visualize your performance metrics, track key trends, and make data-driven decisions to optimize your workflow and productivity."
++        description: "Gain valuable insights with comprehensive dashboards. Visualize your performance metrics, track key trends, and make data-driven decisions to optimize your workflow and productivity.",
++        variant: "purple"
+     }
+ ];
+ 
+Index: frontend/src/pages/Dashboard.jsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import Navbar from \"../components/Navbar.jsx\";\r\n\r\nexport default function Dashboard() {\r\n\r\n    const productDetails=[{\r\n        id:1,\r\n        title: 'Total Products',\r\n        description:'150',\r\n    },\r\n        {\r\n            id:1,\r\n            title: 'Total Value',\r\n            description:'5,00,000',\r\n        },{\r\n            id:1,\r\n            title: 'Low Stock',\r\n            description:'5',\r\n        }]\r\n\r\n    const productDetailsCard=productDetails.map((item)=>{\r\n        return (\r\n            <div key={item.id} className={\"product-cards\"}>\r\n                <h3 className={\"product-card-heading\"}>{item.title}</h3>\r\n                <p className={\"product-card-desc\"}>{item.description}</p>\r\n            </div>\r\n        )\r\n    })\r\n    return(\r\n        <section className={\"dashboard\"}>\r\n            <Navbar/>\r\n            <h2>Dashboard</h2>\r\n            <main className={\"dashboard-main\"}>\r\n                {productDetailsCard}\r\n            </main>\r\n        </section>\r\n    )\r\n}
+===================================================================
+diff --git a/frontend/src/pages/Dashboard.jsx b/frontend/src/pages/Dashboard.jsx
+--- a/frontend/src/pages/Dashboard.jsx	(revision b56f7f31f80753058b6e667b9d89e69dc5863c27)
++++ b/frontend/src/pages/Dashboard.jsx	(date 1769365260067)
+@@ -6,20 +6,23 @@
+         id:1,
+         title: 'Total Products',
+         description:'150',
++        variant: "blue"
+     },
+         {
+-            id:1,
++            id:2,
+             title: 'Total Value',
+             description:'5,00,000',
++            variant: "green"
+         },{
+-            id:1,
++            id:3,
+             title: 'Low Stock',
+             description:'5',
++            variant: "red"
+         }]
+ 
+     const productDetailsCard=productDetails.map((item)=>{
+         return (
+-            <div key={item.id} className={"product-cards"}>
++            <div key={item.id} className={`product-cards product-card--${item.variant}`}>
+                 <h3 className={"product-card-heading"}>{item.title}</h3>
+                 <p className={"product-card-desc"}>{item.description}</p>
+             </div>
+Index: frontend/src/components/Pagination.jsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import Button from \"./Button.jsx\";\r\n\r\nexport default function Pagination(){\r\n    return(\r\n        <div className=\"pagination\">\r\n            <span>Showing 1-10 of 50 Products</span>\r\n            <span><Button>Prev</Button>1 2 3<Button>Next</Button></span>\r\n        </div>\r\n    )\r\n}
+===================================================================
+diff --git a/frontend/src/components/Pagination.jsx b/frontend/src/components/Pagination.jsx
+--- a/frontend/src/components/Pagination.jsx	(revision b56f7f31f80753058b6e667b9d89e69dc5863c27)
++++ b/frontend/src/components/Pagination.jsx	(date 1769362222416)
+@@ -4,7 +4,7 @@
+     return(
+         <div className="pagination">
+             <span>Showing 1-10 of 50 Products</span>
+-            <span><Button>Prev</Button>1 2 3<Button>Next</Button></span>
++            <span><Button variant={"secondary"}>Prev</Button>   1  2  3   <Button variant={"secondary"}>Next</Button></span>
+         </div>
+     )
+ }
+\ No newline at end of file
+Index: frontend/src/components/ProductTable.jsx
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import {productData} from \"./productData.js\"\r\n\r\nexport default function ProductTable(){\r\n    return(\r\n        <table className=\"product-table\">\r\n            <thead>\r\n            <tr>\r\n                <th>Checklist</th>\r\n                <th>Product Name</th>\r\n                <th>Sku</th>\r\n                <th>Category</th>\r\n                <th>Price</th>\r\n                <th>Stock Level</th>\r\n                <th>Status</th>\r\n                <th>Actions</th>\r\n            </tr>\r\n            </thead>\r\n\r\n            <tbody>\r\n            {productData.map((item)=>{\r\n                return(\r\n                <tr key={item.id} className={\"table-data\"}>\r\n                    <td>[]</td>\r\n                    <td>{item.productName}</td>\r\n                    <td>{item.sku}</td>\r\n                    <td>{item.category}</td>\r\n                    <td>{item.price}</td>\r\n                    <td>{item.stockLevel}</td>\r\n                    <td>{item.status}</td>\r\n                    <td>Edit</td>\r\n                </tr>\r\n                )\r\n            })}\r\n\r\n            </tbody>\r\n        </table>\r\n    )\r\n}
+===================================================================
+diff --git a/frontend/src/components/ProductTable.jsx b/frontend/src/components/ProductTable.jsx
+--- a/frontend/src/components/ProductTable.jsx	(revision b56f7f31f80753058b6e667b9d89e69dc5863c27)
++++ b/frontend/src/components/ProductTable.jsx	(date 1769361598417)
+@@ -1,4 +1,5 @@
+ import {productData} from "./productData.js"
++import {Pencil} from "lucide-react"
+ 
+ export default function ProductTable(){
+     return(
+@@ -20,14 +21,14 @@
+             {productData.map((item)=>{
+                 return(
+                 <tr key={item.id} className={"table-data"}>
+-                    <td>[]</td>
++                    <td><input type={"checkbox"} /></td>
+                     <td>{item.productName}</td>
+                     <td>{item.sku}</td>
+                     <td>{item.category}</td>
+                     <td>{item.price}</td>
+-                    <td>{item.stockLevel}</td>
++                    <td><button className={"action"}>+</button> {item.stockLevel} <button className={"action"}>-</button> </td>
+                     <td>{item.status}</td>
+-                    <td>Edit</td>
++                    <td><Pencil size={14}/></td>
+                 </tr>
+                 )
+             })}

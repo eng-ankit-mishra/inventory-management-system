@@ -1,0 +1,210 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"b9f1bb70-948e-452a-89e5-29b2dfedace1\" name=\"Changes\" comment=\"Added navbar reusable component\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/frontend/src/App.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/frontend/src/App.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/frontend/src/components/Button.jsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/frontend/src/components/Button.jsx\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/frontend/src/components/Navbar.jsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/frontend/src/components/Navbar.jsx\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/frontend/src/index.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/frontend/src/index.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/frontend/src/pages/Home.jsx\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/frontend/src/pages/Home.jsx\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n        <option value=\"JSX File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"dev\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;eng-ankit-mishra&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/eng-ankit-mishra/inventory-management-system.git&quot;,\r\n    &quot;accountId&quot;: &quot;f5051aa6-4d56-407d-aaab-91caa0bb8e43&quot;\r\n  }\r\n}</component>\r\n  <component name=\"MavenImportPreferences\">\r\n    <option name=\"generalSettings\">\r\n      <MavenGeneralSettings>\r\n        <option name=\"mavenHomeTypeForPersistence\" value=\"WRAPPER\" />\r\n      </MavenGeneralSettings>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 7\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"386Y8WT6jSY6oV19yB65yoUUO0T\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,\r\n    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,\r\n    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,\r\n    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,\r\n    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;Spring Boot.InventoryApplication.executor&quot;: &quot;Run&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;feature/frontend&quot;,\r\n    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/amish/Projects/inventory&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/amish/Projects/inventory/backend/src/main/java/com/example/Main.java&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\amish\\Projects\\inventory\\backend\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration name=\"InventoryApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\" nameIsGenerated=\"true\">\r\n      <module name=\"backend\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.example.inventory.InventoryApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.240\" />\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.29346.240\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"b9f1bb70-948e-452a-89e5-29b2dfedace1\" name=\"Changes\" comment=\"\" />\r\n      <created>1768121330417</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1768121330417</updated>\r\n      <workItem from=\"1768121331985\" duration=\"24380000\" />\r\n      <workItem from=\"1768333903763\" duration=\"965000\" />\r\n      <workItem from=\"1768398334797\" duration=\"11459000\" />\r\n      <workItem from=\"1768621447612\" duration=\"6704000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Initial project Setup\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1768134949062</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1768134949062</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Added Product entity\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1768136472160</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1768136472160</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Added Category entity\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1768138049149</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1768138049149</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Added logic for complete CRUD operation of products\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1768138096991</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1768138096991</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Optimised the imports\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1768571102755</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1768571102755</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Updated the folder structure created separate module for backend and frontend\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1768582278775</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1768582278776</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"frontend  initial setup\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1768585598744</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1768585598745</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Added Button reusable Component\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1768585647353</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1768585647353</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Added Home Page\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1768585668549</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1768585668549</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Added the frontend iml file\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1768585691110</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1768585691110</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"initial setup\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1768585708664</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1768585708669</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Added navbar reusable component\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1768585759675</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1768585759675</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"13\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Initial project Setup\" />\r\n    <MESSAGE value=\"Added Product entity\" />\r\n    <MESSAGE value=\"Added Category entity\" />\r\n    <MESSAGE value=\"Added logic for complete CRUD operation of products\" />\r\n    <MESSAGE value=\"Optimised the imports\" />\r\n    <MESSAGE value=\"Updated the folder structure created separate module for backend and frontend\" />\r\n    <MESSAGE value=\"frontend  initial setup\" />\r\n    <MESSAGE value=\"Added Button reusable Component\" />\r\n    <MESSAGE value=\"Added Home Page\" />\r\n    <MESSAGE value=\"Added the frontend iml file\" />\r\n    <MESSAGE value=\"initial setup\" />\r\n    <MESSAGE value=\"Added navbar reusable component\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Added navbar reusable component\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 143fc9c223e10f0b70ada7073194e285250e276d)
++++ b/.idea/workspace.xml	(date 1769405555800)
+@@ -4,13 +4,24 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="b9f1bb70-948e-452a-89e5-29b2dfedace1" name="Changes" comment="Added navbar reusable component">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Button.jsx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navbar.jsx" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home.jsx" afterDir="false" />
++    <list default="true" id="b9f1bb70-948e-452a-89e5-29b2dfedace1" name="Changes" comment="Optimised the imports">
++      <change afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.gitattributes" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mvnw" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/backend/mvnw.cmd" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/inventory/InventoryApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/InventoryApplication.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/inventory/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/controller/ProductController.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/inventory/dto/ProductRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/dto/ProductRequest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/inventory/entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/entity/Category.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/inventory/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/entity/Product.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/inventory/repository/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/repository/CategoryRepository.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/inventory/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/repository/ProductRepository.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/inventory/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/service/ProductService.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/inventory/InventoryApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/example/inventory/InventoryApplicationTests.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -21,14 +32,13 @@
+     <option name="RECENT_TEMPLATES">
+       <list>
+         <option value="Class" />
+-        <option value="JSX File" />
+       </list>
+     </option>
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="dev" />
++        <entry key="$PROJECT_DIR$" value="master" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -60,30 +70,26 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+-    &quot;Spring Boot.InventoryApplication.executor&quot;: &quot;Run&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;feature/frontend&quot;,
+-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;C:/Users/amish/Projects/inventory&quot;,
+-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/amish/Projects/inventory/backend/src/main/java/com/example/Main.java&quot;,
+-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "ModuleVcsDetector.initialDetectionPerformed": "true",
++    "RequestMappingsPanelOrder0": "0",
++    "RequestMappingsPanelOrder1": "1",
++    "RequestMappingsPanelWidth0": "75",
++    "RequestMappingsPanelWidth1": "75",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
++    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
++    "Spring Boot.InventoryApplication.executor": "Run",
++    "git-widget-placeholder": "feature/db-layered-architecture",
++    "ignore.virus.scanning.warn.message": "true",
++    "kotlin-language-version-configured": "true",
++    "last_opened_file_path": "C:/Users/amish/Projects/inventory",
++    "nodejs_package_manager_path": "npm",
++    "onboarding.tips.debug.path": "C:/Users/amish/Projects/inventory/backend/src/main/java/com/example/Main.java",
++    "vue.rearranger.settings.migration": "true"
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="C:\Users\amish\Projects\inventory\backend" />
+@@ -115,8 +121,7 @@
+       <updated>1768121330417</updated>
+       <workItem from="1768121331985" duration="24380000" />
+       <workItem from="1768333903763" duration="965000" />
+-      <workItem from="1768398334797" duration="11459000" />
+-      <workItem from="1768621447612" duration="6704000" />
++      <workItem from="1768398334797" duration="7097000" />
+     </task>
+     <task id="LOCAL-00001" summary="Initial project Setup">
+       <option name="closed" value="true" />
+@@ -158,63 +163,7 @@
+       <option name="project" value="LOCAL" />
+       <updated>1768571102755</updated>
+     </task>
+-    <task id="LOCAL-00006" summary="Updated the folder structure created separate module for backend and frontend">
+-      <option name="closed" value="true" />
+-      <created>1768582278775</created>
+-      <option name="number" value="00006" />
+-      <option name="presentableId" value="LOCAL-00006" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1768582278776</updated>
+-    </task>
+-    <task id="LOCAL-00007" summary="frontend  initial setup">
+-      <option name="closed" value="true" />
+-      <created>1768585598744</created>
+-      <option name="number" value="00007" />
+-      <option name="presentableId" value="LOCAL-00007" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1768585598745</updated>
+-    </task>
+-    <task id="LOCAL-00008" summary="Added Button reusable Component">
+-      <option name="closed" value="true" />
+-      <created>1768585647353</created>
+-      <option name="number" value="00008" />
+-      <option name="presentableId" value="LOCAL-00008" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1768585647353</updated>
+-    </task>
+-    <task id="LOCAL-00009" summary="Added Home Page">
+-      <option name="closed" value="true" />
+-      <created>1768585668549</created>
+-      <option name="number" value="00009" />
+-      <option name="presentableId" value="LOCAL-00009" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1768585668549</updated>
+-    </task>
+-    <task id="LOCAL-00010" summary="Added the frontend iml file">
+-      <option name="closed" value="true" />
+-      <created>1768585691110</created>
+-      <option name="number" value="00010" />
+-      <option name="presentableId" value="LOCAL-00010" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1768585691110</updated>
+-    </task>
+-    <task id="LOCAL-00011" summary="initial setup">
+-      <option name="closed" value="true" />
+-      <created>1768585708664</created>
+-      <option name="number" value="00011" />
+-      <option name="presentableId" value="LOCAL-00011" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1768585708669</updated>
+-    </task>
+-    <task id="LOCAL-00012" summary="Added navbar reusable component">
+-      <option name="closed" value="true" />
+-      <created>1768585759675</created>
+-      <option name="number" value="00012" />
+-      <option name="presentableId" value="LOCAL-00012" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1768585759675</updated>
+-    </task>
+-    <option name="localTasksCounter" value="13" />
++    <option name="localTasksCounter" value="6" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -226,13 +175,17 @@
+     <MESSAGE value="Added Category entity" />
+     <MESSAGE value="Added logic for complete CRUD operation of products" />
+     <MESSAGE value="Optimised the imports" />
+-    <MESSAGE value="Updated the folder structure created separate module for backend and frontend" />
+-    <MESSAGE value="frontend  initial setup" />
+-    <MESSAGE value="Added Button reusable Component" />
+-    <MESSAGE value="Added Home Page" />
+-    <MESSAGE value="Added the frontend iml file" />
+-    <MESSAGE value="initial setup" />
+-    <MESSAGE value="Added navbar reusable component" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Added navbar reusable component" />
++    <option name="LAST_COMMIT_MESSAGE" value="Optimised the imports" />
++  </component>
++  <component name="XDebuggerManager">
++    <breakpoint-manager>
++      <breakpoints>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/backend/src/main/java/com/example/Main.java</url>
++          <line>13</line>
++          <option name="timeStamp" value="1" />
++        </line-breakpoint>
++      </breakpoints>
++    </breakpoint-manager>
+   </component>
+ </project>
+\ No newline at end of file
