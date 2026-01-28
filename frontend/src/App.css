@@ -1,23 +1,28 @@
 .navbar {
-    background-color: black;
-    opacity: 80%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #d1d5db;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 8px 16px;
-    border-bottom: 0.1rem solid black;
 }
-.nav-heading {
-    color: white;
-    font-size: 1.3rem;
+.navbar a {
+    color: #1f2937;
+    font-weight: 500;
 }
+
+.navbar a:hover {
+    color: #ff3b3b;
+}
+
 .home{
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: #ff3d38;
+    background-color: #f8fafc;
     color: white;
 }
 
@@ -50,6 +55,24 @@
     cursor: pointer;
 }
 
+.btn-primary {
+    background-color: #ff3b3b;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 18px;
+}
+.btn-primary:hover {
+    background-color: #d32f2f;
+}
+
+.btn-secondary {
+    background-color: #fff1f1;
+    color: #ff3b3b;
+    border: 1px solid #edf2f7;
+}
+
+
 
 
 .btn:hover{
@@ -58,13 +81,15 @@
 }
 
 .footer{
-    background-color: black;
-    opacity: 80%;
-    color: white;
+    background-color: #f1f5f9;
+    border-top: 1px solid #d1d5db;;
+    color: #4b5563;
     padding: 6px;
     width: 100%;
     text-align: center;
 }
+
+
 
 .features{
     width: 23rem;
@@ -88,7 +113,9 @@
 
 
 .features-page{
-    background-color: #ff354a;
+    background-color: #f1f5f9;
+    border-top: 1px solid #edf2f7;
+    color: #4b5563;;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -109,6 +136,23 @@
     align-items: center;
     justify-content: space-evenly;
 }
+
+.card-red {
+    background-color: #fff1f1;
+    border: 1px solid #fcdcdc;
+    border-radius: 14px;
+    padding: 22px;
+}
+.card-blue {
+    background-color: #f0f7ff;
+    border: 1px solid #dbeafe;
+}
+.card-green {
+    background-color: #f0fdf4;
+    border: 1px solid #dcfce7;
+}
+
+
 
 .dashboard{
     background-color: brown;
