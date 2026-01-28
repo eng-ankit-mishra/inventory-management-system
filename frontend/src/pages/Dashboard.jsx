@@ -30,7 +30,7 @@ export default function Dashboard() {
     })
     return(
         <section className={"dashboard"}>
-            <Navbar/>
+            <Navbar AuthRequired={false}/>
             <h2>Dashboard</h2>
             <main className={"dashboard-main"}>
                 {productDetailsCard}
