@@ -4,14 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9f1bb70-948e-452a-89e5-29b2dfedace1" name="Changes" comment="Added navbar reusable component">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18-01-2026_19_30_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18-01-2026_19_30__Changes_.xml" beforeDir="false" />
+    <list default="true" id="b9f1bb70-948e-452a-89e5-29b2dfedace1" name="Changes" comment="Made navbar responsive">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Navbar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/Button.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/features.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/features.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Dashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +122,7 @@
       <workItem from="1768333903763" duration="965000" />
       <workItem from="1768398334797" duration="11459000" />
       <workItem from="1768621447612" duration="6704000" />
-      <workItem from="1769601781100" duration="3410000" />
+      <workItem from="1769601781100" duration="6020000" />
     </task>
     <task id="LOCAL-00001" summary="Initial project Setup">
       <option name="closed" value="true" />
@@ -221,7 +220,39 @@
       <option name="project" value="LOCAL" />
       <updated>1768585759675</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="setup">
+      <option name="closed" value="true" />
+      <created>1769605362981</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1769605362981</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Added styling to different home elements">
+      <option name="closed" value="true" />
+      <created>1769605389265</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1769605389265</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Made global css for headings and paragraphs">
+      <option name="closed" value="true" />
+      <created>1769605528148</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1769605528148</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Made navbar responsive">
+      <option name="closed" value="true" />
+      <created>1769605554341</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1769605554341</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +271,10 @@
     <MESSAGE value="Added the frontend iml file" />
     <MESSAGE value="initial setup" />
     <MESSAGE value="Added navbar reusable component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added navbar reusable component" />
+    <MESSAGE value="setup" />
+    <MESSAGE value="Added styling to different home elements" />
+    <MESSAGE value="Made global css for headings and paragraphs" />
+    <MESSAGE value="Made navbar responsive" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made navbar responsive" />
   </component>
 </project>
