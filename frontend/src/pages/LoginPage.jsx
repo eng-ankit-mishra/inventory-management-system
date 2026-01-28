@@ -1,7 +1,10 @@
 import Navbar from "../components/Navbar.jsx";
 import Button from "../components/Button.jsx";
+import {Link, useNavigate} from "react-router-dom";
 
 export default function LoginPage() {
+
+    const navigate=useNavigate()
     return(
         <section className="login-page">
             <Navbar AuthRequired={false}/>
@@ -13,9 +16,12 @@ export default function LoginPage() {
                     <input name="email" type="email" placeholder={"Enter your email"}/>
                     <label>Password: </label>
                     <input name="password" type="password" placeholder={"Enter your password"}/>
-                    <Button>Login</Button>
+                    <Button onClick={()=>navigate("/dashboard")}>Login</Button>
                 </form>
                 <a>Forget your password?</a>
+                <p className="auth-switch">
+                    Don't have an account? <Link to="/signup">Signup</Link>
+                </p>
             </main>
         </section>
     )
