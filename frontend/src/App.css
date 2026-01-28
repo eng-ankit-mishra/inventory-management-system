@@ -44,16 +44,6 @@
     text-align: center;
 }
 
-.btn{
-    background-color: darkgreen;
-    color: white;
-    padding: 8px 12px;
-    border-radius: 6px;
-    border: 1px solid grey;
-    letter-spacing: 1px;
-    font-size: 1rem;
-    cursor: pointer;
-}
 
 .btn-primary {
     background-color: #ff3b3b;
@@ -61,6 +51,8 @@
     border: none;
     border-radius: 8px;
     padding: 10px 18px;
+    font-weight: 500;
+    cursor: pointer;
 }
 .btn-primary:hover {
     background-color: #d32f2f;
@@ -69,15 +61,16 @@
 .btn-secondary {
     background-color: #fff1f1;
     color: #ff3b3b;
-    border: 1px solid #edf2f7;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 10px 18px;
+    font-weight: 500;
+    cursor: pointer;
 }
-
-
-
-
-.btn:hover{
-    background-color: darkolivegreen;
-    scale: 1.03;
+.btn-secondary:hover {
+    background-color: #ff3b3b;
+    color: #ffffff;
+    border-color: #ff3b3b;
 }
 
 .footer{
@@ -89,9 +82,7 @@
     text-align: center;
 }
 
-
-
-.features{
+.cards{
     width: 23rem;
     display: flex;
     flex-direction: column;
@@ -101,12 +92,13 @@
     border-radius: 10px;
     padding: 1rem;
 }
-.features h3{
+.cards h3{
     font-size: 1.5rem;
     padding: 8px;
 }
 
-.features p{
+.cards p{
+    text-align: center;
     letter-spacing: 1px;
     line-height: 1.5;
 }
@@ -139,23 +131,23 @@
 
 .card-red {
     background-color: #fff1f1;
-    border: 1px solid #fcdcdc;
+    border: 1px solid #d1d5db;
     border-radius: 14px;
     padding: 22px;
 }
 .card-blue {
     background-color: #f0f7ff;
-    border: 1px solid #dbeafe;
+    border: 1px solid #d1d5db;
 }
 .card-green {
     background-color: #f0fdf4;
-    border: 1px solid #dcfce7;
+    border: 1px solid #d1d5db;
 }
 
 
 
 .dashboard{
-    background-color: brown;
+    background-color: #f8fafc;
     color: white;
     height: 100vh;
     flex-direction: column;
@@ -178,26 +170,40 @@
     justify-content: space-evenly;
 }
 
-.product-cards{
-    background-color: #6acbff;
-    color: black;
+.dashboard-card {
     width: 20rem;
-    height: 18rem;
+    height: 12rem;
+    border-radius: 14px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 0.1rem solid black;
-    border-radius: 10px;
+    gap: 1rem;
+    padding: 50px;
+    border: 1px solid #4b5563;
 }
 
-.product-card-heading{
-    font-size: 2.25rem;
+.dashboard-card h3{
+    font-size: 1.8rem;
 }
 
-.product-card-desc{
-    font-size: 2rem;
+.dashboard-card p{
+    font-size: 1.5rem;
 }
+
+.card-blue{
+    background-color: #f0f7ff;
+}
+
+
+.card-green {
+    background-color: #f0fdf4;
+}
+
+.card-red {
+    background-color: #fff1f1;
+}
+
 
 .product-list{
     width: 100%;
@@ -215,10 +221,10 @@
 
 .product-table th,
 .product-table td {
-    border: 1px solid #444; /* The grid lines (Grey color) */
-    padding: 12px;          /* Space inside the box */
-    text-align: left;       /* Align text to the left */
-    vertical-align: middle; /* Center text vertically */
+    border: 1px solid #444;
+    padding: 12px;
+    text-align: left;
+    vertical-align: middle;
 }
 
 .table-data{
