@@ -1,6 +1,9 @@
 import Navbar from "../components/Navbar.jsx";
+import {useNavigate} from "react-router-dom"
 
 export default function Dashboard() {
+
+    const navigate=useNavigate();
 
     const productDetails=[{
         id:1,
@@ -22,7 +25,7 @@ export default function Dashboard() {
 
     const productDetailsCard=productDetails.map((item)=>{
         return (
-            <div key={item.id} className={`dashboard-card card-${item.color}`}>
+            <div onClick={()=>navigate("/products")} key={item.id} className={`dashboard-card card-${item.color}`}>
                 <h3 className={"product-card-heading"}>{item.title}</h3>
                 <p className={"product-card-desc"}>{item.description}</p>
             </div>
