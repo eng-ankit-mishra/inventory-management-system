@@ -7,7 +7,7 @@ export default function Product(){
     return (
         <section className="product-list">
             <Navbar/>
-            <h2>Product List</h2>
+            <h2 className={"product-heading"}>Product List</h2>
             <ProductController/>
             <main>
                 <ProductTable/>
