@@ -20,14 +20,14 @@ export default function ProductTable(){
             {productData.map((item)=>{
                 return(
                 <tr key={item.id} className={"table-data"}>
-                    <td>[]</td>
+                    <td><input type={"checkbox"}/></td>
                     <td>{item.productName}</td>
                     <td>{item.sku}</td>
                     <td>{item.category}</td>
                     <td>{item.price}</td>
-                    <td>{item.stockLevel}</td>
+                    <td><button className={"btn-action"}>+</button> {item.stockLevel} <button className={"btn-action"}>-</button></td>
                     <td>{item.status}</td>
-                    <td>Edit</td>
+                    <td>...</td>
                 </tr>
                 )
             })}
