@@ -6,7 +6,6 @@ export default function LoginPage() {
         <section className="login-page">
             <Navbar/>
             <main className="login-card">
-                <h3>Inventory App</h3>
                 <h4>Welcome Back</h4>
                 <p>Please Sign in to your account</p>
                 <form className="login-form">
