@@ -1,9 +1,9 @@
 import Button from './Button.jsx'
-export default function Navbar(){
+export default function Navbar({AuthRequired=true}){
     return (
         <nav className="navbar">
             <h2><a>InventoryApp</a></h2>
-            <Button>Login / Register</Button>
+            {AuthRequired && <Button>Login / Register</Button>}
         </nav>
     )
 }
