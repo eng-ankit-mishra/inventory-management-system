@@ -4,15 +4,15 @@ import Button from "../components/Button.jsx";
 export default function LoginPage() {
     return(
         <section className="login-page">
-            <Navbar/>
+            <Navbar AuthRequired={false}/>
             <main className="login-card">
                 <h4>Welcome Back</h4>
                 <p>Please Sign in to your account</p>
                 <form className="login-form">
                     <label>Email : </label>
-                    <input name="email" type="email" />
+                    <input name="email" type="email" placeholder={"Enter your email"}/>
                     <label>Password: </label>
-                    <input name="password" type="password" />
+                    <input name="password" type="password" placeholder={"Enter your password"}/>
                     <Button>Login</Button>
                 </form>
                 <a>Forget your password?</a>
