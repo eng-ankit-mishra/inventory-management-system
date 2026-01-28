@@ -6,7 +6,7 @@ import {featuresData} from "../components/features.js"
 export default function Home(){
     const features=featuresData.map((feature)=>{
         return(
-            <div key={feature.id} className="features">
+            <div key={feature.id} className={`cards card-${feature.color}`}>
                 <h3>{feature.title}</h3>
                 <p>{feature.description}</p>
             </div>
@@ -20,7 +20,7 @@ export default function Home(){
                 <p>Manage Your Inventory with Ease
                     Track products, monitor stock, and analyze
                     data in one secure place.</p>
-                <Button>Get Started</Button>
+                <Button type={"secondary"}>Get Started</Button>
             </main>
             <main className="features-page">
                 <h2>Why choose us ?</h2>
