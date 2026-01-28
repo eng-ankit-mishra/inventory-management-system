@@ -4,3 +4,15 @@
     box-sizing:border-box;
     font-family: "JetBrains Mono Thin", sans-serif;
 }
+
+h1, h2, h3 {
+    color: #1f2937;
+}
+
+p {
+    color: #4b5563;
+}
+
+.text-muted {
+    color: #6b7280;
+}
