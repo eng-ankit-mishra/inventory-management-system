@@ -1,7 +1,10 @@
 import Navbar from "../components/Navbar.jsx";
 import Button from "../components/Button.jsx";
+import {Link,useNavigate} from "react-router-dom";
 
 export default function SignUpPage() {
+
+    const navigate=useNavigate();
     return (
         <section className="signup-page">
             <Navbar AuthRequired={false} />
@@ -28,11 +31,11 @@ export default function SignUpPage() {
                         <option value="staff">Staff</option>
                     </select>
 
-                    <Button>Sign Up</Button>
+                    <Button onClick={()=>navigate("/dashboard")}>Sign Up</Button>
                 </form>
 
                 <p className="auth-switch">
-                    Already have an account? <a href="/login">Login</a>
+                    Already have an account? <Link to="/login">Login</Link>
                 </p>
             </main>
         </section>
