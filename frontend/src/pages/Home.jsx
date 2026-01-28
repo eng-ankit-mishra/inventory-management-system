@@ -2,8 +2,10 @@ import Navbar from '../components/Navbar.jsx'
 import Footer from "../components/Footer.jsx";
 import Button from "../components/Button.jsx";
 import {featuresData} from "../components/features.js"
+import {useNavigate} from "react-router-dom"
 
 export default function Home(){
+    const navigate=useNavigate();
     const features=featuresData.map((feature)=>{
         return(
             <div key={feature.id} className={`cards card-${feature.color}`}>
@@ -20,7 +22,7 @@ export default function Home(){
                 <p>Manage Your Inventory with Ease
                     Track products, monitor stock, and analyze
                     data in one secure place.</p>
-                <Button type={"secondary"}>Get Started</Button>
+                <Button onClick={()=>navigate("/login")} type={"secondary"}>Get Started</Button>
             </main>
             <main className="features-page">
                 <h2>Why choose us ?</h2>
