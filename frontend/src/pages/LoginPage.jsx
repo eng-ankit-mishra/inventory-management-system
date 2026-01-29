@@ -18,7 +18,7 @@ export default function LoginPage() {
                     <input name="password" type="password" placeholder={"Enter your password"}/>
                     <Button onClick={()=>navigate("/dashboard")}>Login</Button>
                 </form>
-                <a>Forget your password?</a>
+                <Link to={"/forget-password"}>Forget your password?</Link>
                 <p className="auth-switch">
                     Don't have an account? <Link to="/signup">Signup</Link>
                 </p>
