@@ -1,7 +1,9 @@
 import Button from "../components/Button.jsx";
 import Navbar from "../components/Navbar.jsx";
+import {useNavigate} from "react-router-dom"
 
 export default function ForgetPassword() {
+    const navigate=useNavigate();
     return (
         <section className="forget-password">
             <Navbar AuthRequired={false} />
@@ -23,7 +25,7 @@ export default function ForgetPassword() {
                         placeholder="Enter your new password"
                     />
 
-                    <Button type="submit">Submit</Button>
+                    <Button onClick={()=>navigate("/login")}>Submit</Button>
                 </form>
             </main>
 
