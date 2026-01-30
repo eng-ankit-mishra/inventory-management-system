@@ -1,7 +1,7 @@
-import Navbar from "../components/Navbar.jsx";
-import ProductController from "../components/ProductController.jsx"
-import ProductTable from "../components/ProductTable.jsx";
-import Pagination from "../components/Pagination.jsx";
+import Navbar from "../../components/layout/Navbar.jsx";
+import ProductController from "./ProductController.jsx"
+import ProductTable from "./ProductTable.jsx";
+import Pagination from "../../components/common/Pagination.jsx";
 
 export default function Product(){
     return (

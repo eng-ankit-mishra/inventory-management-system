@@ -1,4 +1,4 @@
-import Button from "./Button.jsx";
+import Button from "../../components/common/Button.jsx";
 import {useState} from "react";
 import ProductModals from "./ProductModals.jsx";
 

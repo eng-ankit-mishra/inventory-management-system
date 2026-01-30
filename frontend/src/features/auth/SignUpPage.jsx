@@ -1,5 +1,5 @@
-import Navbar from "../components/Navbar.jsx";
-import Button from "../components/Button.jsx";
+import Navbar from "../../components/layout/Navbar.jsx";
+import Button from "../../components/common/Button.jsx";
 import {Link,useNavigate} from "react-router-dom";
 
 export default function SignUpPage() {

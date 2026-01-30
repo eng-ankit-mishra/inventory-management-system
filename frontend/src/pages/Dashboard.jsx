@@ -1,4 +1,4 @@
-import Navbar from "../components/Navbar.jsx";
+import Navbar from "../components/layout/Navbar.jsx";
 import {useNavigate} from "react-router-dom"
 
 export default function Dashboard() {

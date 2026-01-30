@@ -1,11 +1,11 @@
 import Home from './pages/Home.jsx'
-import './App.css'
+import './styles/App.css'
 import {BrowserRouter,Route,Routes} from "react-router"
 import Dashboard from "./pages/Dashboard.jsx";
-import Product from "./pages/Product.jsx";
-import LoginPage from "./pages/LoginPage.jsx";
-import SignUpPage from "./pages/SignUpPage.jsx";
-import ForgetPassword from "./pages/ForgetPassword.jsx";
+import Product from "./features/product/Product.jsx";
+import LoginPage from "./features/auth/LoginPage.jsx";
+import SignUpPage from "./features/auth/SignUpPage.jsx";
+import ForgetPassword from "./features/auth/ForgetPassword.jsx";
 
 export default function App(){
     return (

@@ -1,7 +1,7 @@
-import Navbar from '../components/Navbar.jsx'
-import Footer from "../components/Footer.jsx";
-import Button from "../components/Button.jsx";
-import {featuresData} from "../components/features.js"
+import Navbar from '../components/layout/Navbar.jsx'
+import Footer from "../components/layout/Footer.jsx";
+import Button from "../components/common/Button.jsx";
+import {featuresData} from "../features/product/features.js"
 import {useNavigate} from "react-router-dom"
 
 export default function Home(){

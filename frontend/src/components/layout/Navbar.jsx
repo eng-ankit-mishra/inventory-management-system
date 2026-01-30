@@ -1,4 +1,4 @@
-import Button from './Button.jsx'
+import Button from '../common/Button.jsx'
 import {Link, useNavigate} from "react-router-dom";
 export default function Navbar({AuthRequired=true}){
     const navigate=useNavigate();
