@@ -212,6 +212,7 @@
 .product-list{
     width: 100%;
     height: 100vh;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -401,25 +402,92 @@
     text-decoration: underline;
 }
 
-
-.forget-password-card{
+.forget-password {
     width: 100%;
-    height: calc(100vh - 52px);
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
-.forget-password-form{
+/* Card */
+.forget-password-card {
     width: 22.5rem;
-    height: 14rem;
+    height: 24rem;
+    margin-top: 5rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    text-align: center;
-    gap: 0.5rem;
-    border: 1px solid #d1d5db;
-    border-radius: 5px;
+    gap: 1rem;
+    border: 0.1rem solid #d1d5db;
+    border-radius: 10px;
 }
+
+/* Heading */
+.forget-password-card h4 {
+    font-size: 1.5rem;
+}
+
+.forget-password-form {
+    width: 100%;
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.forget-password-form input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 0.1rem solid #d1d5db;
+}
+
+.forget-password-form button {
+    margin-top: 1rem;
+}
+.product-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.product-modals {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+}
+
+.product-modals-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 22rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.product-modals-card input,
+.product-modals-card select{
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.product-modals-card h4{
+    text-align: center;
+    font-size: 1.25rem;
+    padding: 4px 0 8px 0;
+}
+
+.product-modals-card button{
+    margin-top: 10px;
+}
+
+
+
