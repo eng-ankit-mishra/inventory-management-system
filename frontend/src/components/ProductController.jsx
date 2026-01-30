@@ -1,6 +1,10 @@
 import Button from "./Button.jsx";
+import {useState} from "react";
+import ProductModals from "./ProductModals.jsx";
 
 export default function ProductController() {
+    const [modals,setShowmodals]=useState(false)
+
     return (
         <main className={"product-controller"}>
             <div className={"product-controller-selector"}>
@@ -18,7 +22,10 @@ export default function ProductController() {
                     <option>Out of Stock</option>
                 </select>
             </div>
-            <Button> + New Product</Button>
+            <Button onClick={()=>setShowmodals(true)}> + New Product</Button>
+            {modals && (
+                <ProductModals onClose={()=>setShowmodals(false)}/>
+            )}
         </main>
     )
 }
