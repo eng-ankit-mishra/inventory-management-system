@@ -1,6 +1,9 @@
-import {productData} from "./productData.js"
+import api from "../../api/axiosClient.js"
+import {useEffect, useState} from "react";
 
-export default function ProductTable(){
+export default function ProductTable({products}){
+
+
     return(
         <table className="product-table">
             <thead>
@@ -17,16 +20,16 @@ export default function ProductTable(){
             </thead>
 
             <tbody>
-            {productData.map((item)=>{
+            {products.map((item)=>{
                 return(
-                <tr key={item.id} className={"table-data"}>
+                <tr key={item.sku} className={"table-data"}>
                     <td><input type={"checkbox"}/></td>
-                    <td>{item.productName}</td>
+                    <td>{item.name}</td>
                     <td>{item.sku}</td>
-                    <td>{item.category}</td>
+                    <td>{item.category.name}</td>
                     <td>{item.price}</td>
-                    <td><button className={"btn-action"}>+</button> {item.stockLevel} <button className={"btn-action"}>-</button></td>
-                    <td>{item.status}</td>
+                    <td><button className={"btn-action"}>+</button> {item.quantity} <button className={"btn-action"}>-</button></td>
+                    <td>{item.quantity > 10 ? "In Stock" : (item.quantity === 0 ? "Out of Stock" : "Low Stock")}</td>
                     <td>...</td>
                 </tr>
                 )
