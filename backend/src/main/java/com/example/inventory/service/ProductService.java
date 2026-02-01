@@ -1,6 +1,7 @@
 package com.example.inventory.service;
 
 import com.example.inventory.dto.ProductRequest;
+import com.example.inventory.dto.ProductSummaryResponse;
 import com.example.inventory.entity.Category;
 import com.example.inventory.entity.Product;
 import com.example.inventory.repository.CategoryRepository;
@@ -25,6 +26,30 @@ public class ProductService {
     public Product getProductById(Long id) {
         return productRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Product not found"));
+    }
+
+    public ProductSummaryResponse getProductSummary(){
+        List<Product> allProducts=productRepository.findAll();
+
+        List<Product> lowStockProducts=allProducts.stream()
+                .filter(p->p.getQuantity()<10)
+                .toList();
+
+        long lowStocks=lowStockProducts.size();
+
+        double totalPrice=allProducts.stream().mapToDouble(p->p.getPrice() * p.getQuantity()).sum();
+
+        long totalProducts=allProducts.size();
+
+        ProductSummaryResponse response = new ProductSummaryResponse();
+
+        response.setLowStock(lowStocks);
+        response.setTotalProducts(totalProducts);
+        response.setTotalPrice(totalPrice);
+
+        return response;
+
+
     }
 
     public Product addProduct(ProductRequest request) {
