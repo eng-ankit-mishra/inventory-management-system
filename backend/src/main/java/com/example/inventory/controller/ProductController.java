@@ -1,6 +1,7 @@
 package com.example.inventory.controller;
 
 import com.example.inventory.dto.ProductRequest;
+import com.example.inventory.dto.ProductSummaryResponse;
 import com.example.inventory.entity.Product;
 import com.example.inventory.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,12 @@ public class ProductController {
     @GetMapping("/{id}")
     public Product getOne(@PathVariable Long id) {
         return productService.getProductById(id);
+    }
+
+    @GetMapping("/getSummary")
+    public ProductSummaryResponse getProductSummary(
+    ){
+        return productService.getProductSummary();
     }
 
     @PostMapping
