@@ -4,27 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9f1bb70-948e-452a-89e5-29b2dfedace1" name="Changes" comment="Updated the folder structure">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/dto/ProductSummaryResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/application-local.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/resources/application-prod.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/api/axiosClient.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/common/Button.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/common/Button.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/common/Pagination.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/common/Pagination.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/features/product/Product.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/product/Product.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/features/product/ProductController.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/product/ProductController.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/features/product/ProductModals.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/product/ProductModals.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/features/product/ProductTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/product/ProductTable.jsx" afterDir="false" />
+    <list default="true" id="b9f1bb70-948e-452a-89e5-29b2dfedace1" name="Changes" comment="updated the configuration">
       <change beforePath="$PROJECT_DIR$/frontend/src/features/product/productData.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Dashboard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,37 +55,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.InventoryApplication.executor": "Run",
-    "git-widget-placeholder": "feature/api-integration",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/amish/Projects/inventory",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "node",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/amish/Projects/inventory/backend/src/main/java/com/example/Main.java",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.InventoryApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/api-integration&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/amish/Projects/inventory&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/amish/Projects/inventory/backend/src/main/java/com/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\amish\IdeaProjects\inventory-management-system\frontend\src\features\product" />
@@ -146,118 +127,7 @@
       <workItem from="1769601781100" duration="16065000" />
       <workItem from="1769666547165" duration="11827000" />
       <workItem from="1769791732605" duration="18915000" />
-    </task>
-    <task id="LOCAL-00001" summary="Initial project Setup">
-      <option name="closed" value="true" />
-      <created>1768134949062</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1768134949062</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added Product entity">
-      <option name="closed" value="true" />
-      <created>1768136472160</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1768136472160</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Added Category entity">
-      <option name="closed" value="true" />
-      <created>1768138049149</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1768138049149</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Added logic for complete CRUD operation of products">
-      <option name="closed" value="true" />
-      <created>1768138096991</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1768138096991</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Optimised the imports">
-      <option name="closed" value="true" />
-      <created>1768571102755</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1768571102755</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Updated the folder structure created separate module for backend and frontend">
-      <option name="closed" value="true" />
-      <created>1768582278775</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1768582278776</updated>
-    </task>
-    <task id="LOCAL-00007" summary="frontend  initial setup">
-      <option name="closed" value="true" />
-      <created>1768585598744</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1768585598745</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Added Button reusable Component">
-      <option name="closed" value="true" />
-      <created>1768585647353</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1768585647353</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Added Home Page">
-      <option name="closed" value="true" />
-      <created>1768585668549</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1768585668549</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Added the frontend iml file">
-      <option name="closed" value="true" />
-      <created>1768585691110</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1768585691110</updated>
-    </task>
-    <task id="LOCAL-00011" summary="initial setup">
-      <option name="closed" value="true" />
-      <created>1768585708664</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1768585708669</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Added navbar reusable component">
-      <option name="closed" value="true" />
-      <created>1768585759675</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1768585759675</updated>
-    </task>
-    <task id="LOCAL-00013" summary="setup">
-      <option name="closed" value="true" />
-      <created>1769605362981</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1769605362981</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Added styling to different home elements">
-      <option name="closed" value="true" />
-      <created>1769605389265</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1769605389265</updated>
+      <workItem from="1769954038540" duration="602000" />
     </task>
     <task id="LOCAL-00015" summary="Made global css for headings and paragraphs">
       <option name="closed" value="true" />
@@ -531,27 +401,133 @@
       <option name="project" value="LOCAL" />
       <updated>1769780645360</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Added logic for getting data">
+      <option name="closed" value="true" />
+      <created>1769954285590</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1769954285590</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Added logic for sending summary of product">
+      <option name="closed" value="true" />
+      <created>1769954307078</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1769954307078</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Added logic for sending summary of product">
+      <option name="closed" value="true" />
+      <created>1769954316446</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1769954316446</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Added logic for sending summary of product">
+      <option name="closed" value="true" />
+      <created>1769954337561</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1769954337561</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Added new row for product description">
+      <option name="closed" value="true" />
+      <created>1769954390135</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1769954390135</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Added the logic for search and filter">
+      <option name="closed" value="true" />
+      <created>1769954427144</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1769954427150</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Added the logic for filtering product data">
+      <option name="closed" value="true" />
+      <created>1769954450018</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1769954450018</updated>
+    </task>
+    <task id="LOCAL-00056" summary="updated the ui">
+      <option name="closed" value="true" />
+      <created>1769954467626</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1769954467626</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Added axios">
+      <option name="closed" value="true" />
+      <created>1769954484575</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1769954484575</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Updated the button style">
+      <option name="closed" value="true" />
+      <created>1769954507148</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1769954507148</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Added the logic for getting summary of products">
+      <option name="closed" value="true" />
+      <created>1769954534697</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1769954534697</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Added the type props">
+      <option name="closed" value="true" />
+      <created>1769954553607</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1769954553607</updated>
+    </task>
+    <task id="LOCAL-00061" summary="Created a common api file">
+      <option name="closed" value="true" />
+      <created>1769954578628</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1769954578628</updated>
+    </task>
+    <task id="LOCAL-00062" summary="separated databse for local and prod">
+      <option name="closed" value="true" />
+      <created>1769954614444</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1769954614444</updated>
+    </task>
+    <task id="LOCAL-00063" summary="updated the configuration">
+      <option name="closed" value="true" />
+      <created>1769954633242</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1769954633242</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="setup" />
-    <MESSAGE value="Changed the class nome of cards" />
-    <MESSAGE value="updated the font alignment" />
-    <MESSAGE value="Changed the background color" />
-    <MESSAGE value="Added dashboard styling" />
-    <MESSAGE value="Added type props" />
-    <MESSAGE value="updated the class name" />
-    <MESSAGE value="updated the button type" />
-    <MESSAGE value="updated the styling of product page" />
-    <MESSAGE value="updated the styling of login page" />
-    <MESSAGE value="Created new signup Page" />
-    <MESSAGE value="Added Auth Required prop" />
-    <MESSAGE value="updated the colors of the background" />
-    <MESSAGE value="updated the styling of login and signup page" />
     <MESSAGE value="updated the classname of elements" />
     <MESSAGE value="Added white spacing" />
     <MESSAGE value="Added styling for App name" />
@@ -563,6 +539,20 @@
     <MESSAGE value="Added styling to forgot-password page" />
     <MESSAGE value="Added new forgot-password page routes" />
     <MESSAGE value="Updated the folder structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated the folder structure" />
+    <MESSAGE value="Added logic for getting data" />
+    <MESSAGE value="Added logic for sending summary of product" />
+    <MESSAGE value="Added new row for product description" />
+    <MESSAGE value="Added the logic for search and filter" />
+    <MESSAGE value="Added the logic for filtering product data" />
+    <MESSAGE value="updated the ui" />
+    <MESSAGE value="Added axios" />
+    <MESSAGE value="Updated the button style" />
+    <MESSAGE value="Added the logic for getting summary of products" />
+    <MESSAGE value="Added the type props" />
+    <MESSAGE value="C" />
+    <MESSAGE value="Created a common api file" />
+    <MESSAGE value="separated databse for local and prod" />
+    <MESSAGE value="updated the configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated the configuration" />
   </component>
 </project>
