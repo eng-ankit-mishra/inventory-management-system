@@ -22,7 +22,7 @@ export default function Home(){
                 <p>Manage Your Inventory with Ease
                     Track products, monitor stock, and analyze
                     data in one secure place.</p>
-                <Button onClick={()=>navigate("/login")} type={"secondary"}>Get Started</Button>
+                <Button onClick={()=>navigate("/login")} style={"secondary"}>Get Started</Button>
             </main>
             <main className="features-page">
                 <h2>Why choose us ?</h2>
