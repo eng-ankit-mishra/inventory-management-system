@@ -1,25 +1,46 @@
 import Navbar from "../components/layout/Navbar.jsx";
 import {useNavigate} from "react-router-dom"
+import {useEffect, useState} from "react";
+import api from "../api/axiosClient.js";
 
 export default function Dashboard() {
 
     const navigate=useNavigate();
+    const [product,setProduct]=useState({
+        totalProducts: 0,
+        totalPrice: 0,
+        lowStock: 0
+    });
+
+    useEffect(() => {
+        const fetchProduct= async ()=>{
+            try{
+                const productData = await api.get("/api/products/getSummary");
+                setProduct(productData.data);
+                console.log(productData.data)
+            }catch(err){
+                console.log(err);
+            }
+        }
+        fetchProduct();
+    }, []);
+
 
     const productDetails=[{
         id:1,
         title: 'Total Products',
-        description:'150',
+        description:product.totalProducts,
         color:"red"
     },
         {
-            id:1,
+            id:2,
             title: 'Total Value',
-            description:'5,00,000',
+            description:product.totalPrice,
             color:"blue"
         },{
-            id:1,
+            id:3,
             title: 'Low Stock',
-            description:'5',
+            description:product.lowStock,
             color:"green"
         }]
 
