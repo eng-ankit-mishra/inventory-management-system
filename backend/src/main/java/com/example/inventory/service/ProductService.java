@@ -1,7 +1,7 @@
 package com.example.inventory.service;
 
-import com.example.inventory.dto.ProductRequest;
-import com.example.inventory.dto.ProductSummaryResponse;
+import com.example.inventory.dto.request.ProductRequest;
+import com.example.inventory.dto.response.ProductSummaryResponse;
 import com.example.inventory.entity.Category;
 import com.example.inventory.entity.Product;
 import com.example.inventory.repository.CategoryRepository;
