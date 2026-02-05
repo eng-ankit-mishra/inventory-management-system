@@ -1,7 +1,7 @@
 package com.example.inventory.controller;
 
-import com.example.inventory.dto.ProductRequest;
-import com.example.inventory.dto.ProductSummaryResponse;
+import com.example.inventory.dto.request.ProductRequest;
+import com.example.inventory.dto.response.ProductSummaryResponse;
 import com.example.inventory.entity.Product;
 import com.example.inventory.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +12,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/products")
-@CrossOrigin(origins = "http://localhost:5173")
 public class ProductController {
 
     @Autowired
