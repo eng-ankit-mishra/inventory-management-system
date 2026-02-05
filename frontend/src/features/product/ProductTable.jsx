@@ -28,7 +28,7 @@ export default function ProductTable({products}){
                     <td>{item.sku}</td>
                     <td>{item.category.name}</td>
                     <td>{item.price}</td>
-                    <td><button className={"btn-action"}>+</button> {item.quantity} <button className={"btn-action"}>-</button></td>
+                    <td>{item.quantity}</td>
                     <td>{item.quantity > 10 ? "In Stock" : (item.quantity === 0 ? "Out of Stock" : "Low Stock")}</td>
                     <td>...</td>
                 </tr>
