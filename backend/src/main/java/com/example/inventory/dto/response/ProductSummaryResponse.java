@@ -1,9 +1,6 @@
-package com.example.inventory.dto;
+package com.example.inventory.dto.response;
 
-import com.example.inventory.entity.Product;
 import lombok.Data;
-
-import java.util.List;
 
 @Data
 public class ProductSummaryResponse {
