@@ -1,10 +1,43 @@
 import Navbar from "../../components/layout/Navbar.jsx";
 import Button from "../../components/common/Button.jsx";
-import {Link,useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 export default function SignUpPage() {
 
-    const navigate=useNavigate();
+
+    async function handleSubmit(e){
+        e.preventDefault();
+        const name=e.target.name.value;
+        const email=e.target.email.value;
+        const password=e.target.password.value;
+        const role=e.target.role.value;
+
+        try{
+            const response=await fetch("http://localhost:8080/api/auth/register",{
+                method:"POST",
+                headers:{
+                    "Content-Type":"application/json"
+                },
+                body:JSON.stringify({name,email,password,role})
+            })
+            if(response.ok){
+                const data=await response.json()
+                const token=data.token
+
+                localStorage.setItem("jwtToken",token);
+                console.log("Login Successful");
+
+                window.location.href="/dashboard";
+
+            }else{
+                console.log("Something Went Wrong!",response)
+            }
+        }catch (err){
+            console.log("error",err);
+        }
+
+    }
+
     return (
         <section className="signup-page">
             <Navbar AuthRequired={false} />
@@ -13,7 +46,7 @@ export default function SignUpPage() {
                 <h4>Create your account</h4>
                 <p>Please fill in the details to get started</p>
 
-                <form className="signup-form">
+                <form onSubmit={handleSubmit} className="signup-form">
                     <label>Name:</label>
                     <input name="name" type="text" placeholder="Enter your name" />
 
@@ -25,13 +58,11 @@ export default function SignUpPage() {
 
                     <label>Role:</label>
                     <select name="role">
-                        <option value="">Select role</option>
-                        <option value="admin">Admin</option>
-                        <option value="manager">Manager</option>
-                        <option value="staff">Staff</option>
+                        <option value="STAFF">Staff</option>
+                        <option value="ADMIN">Admin</option>
                     </select>
 
-                    <Button onClick={()=>navigate("/dashboard")}>Sign Up</Button>
+                    <Button type={"submit"}>Sign Up</Button>
                 </form>
 
                 <p className="auth-switch">
