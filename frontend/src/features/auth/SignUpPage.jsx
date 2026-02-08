@@ -1,9 +1,11 @@
 import Navbar from "../../components/layout/Navbar.jsx";
 import Button from "../../components/common/Button.jsx";
 import {Link} from "react-router-dom";
+import {useState} from "react";
 
 export default function SignUpPage() {
 
+    const [msg,setMsg]=useState("")
 
     async function handleSubmit(e){
         e.preventDefault();
@@ -21,16 +23,13 @@ export default function SignUpPage() {
                 body:JSON.stringify({name,email,password,role})
             })
             if(response.ok){
-                const data=await response.json()
-                const token=data.token
-
-                localStorage.setItem("jwtToken",token);
-                console.log("Login Successful");
-
-                window.location.href="/dashboard";
-
+                const data=await response.text()
+                setMsg("Registration Successful.Please check your email!");
+                console.log(data);
+                e.target.reset()
             }else{
                 console.log("Something Went Wrong!",response)
+                setMsg("Something went wrong.Please try again later!.");
             }
         }catch (err){
             console.log("error",err);
@@ -40,7 +39,7 @@ export default function SignUpPage() {
 
     return (
         <section className="signup-page">
-            <Navbar AuthRequired={false} />
+            <Navbar/>
 
             <main className="signup-card">
                 <h4>Create your account</h4>
@@ -64,6 +63,8 @@ export default function SignUpPage() {
 
                     <Button type={"submit"}>Sign Up</Button>
                 </form>
+
+                <p>{msg}</p>
 
                 <p className="auth-switch">
                     Already have an account? <Link to="/login">Login</Link>
