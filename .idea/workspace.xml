@@ -4,8 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9f1bb70-948e-452a-89e5-29b2dfedace1" name="Changes" comment="updated the configuration">
-      <change beforePath="$PROJECT_DIR$/frontend/src/features/product/productData.js" beforeDir="false" />
+    <list default="true" id="b9f1bb70-948e-452a-89e5-29b2dfedace1" name="Changes" comment="uncommited changes">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/config/DataInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/controller/AdminController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/dto/request/ResetPasswordRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/entity/ConfirmationToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/repository/ConfirmationTokenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/service/ConfirmationTokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/service/EmailSender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/service/EmailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/AuthContext/AuthProvider.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/Profile.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/admin/UserManagement.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/routes/AdminRoutes.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/routes/ProtectedRoutes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/controller/AuthenticationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/dto/response/AuthenticationResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/dto/response/AuthenticationResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/service/AuthenticationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/layout/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/layout/Navbar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/auth/ForgetPassword.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/auth/ForgetPassword.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/auth/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/auth/LoginPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/auth/SignUpPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/auth/SignUpPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/product/Product.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/product/Product.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/features/product/ProductTable.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/features/product/ProductTable.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Dashboard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styles/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles/App.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +48,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JSX File" />
         <option value="Class" />
+        <option value="JSX File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -47,6 +81,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -68,10 +105,11 @@
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Spring Boot.InventoryApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;feature/api-integration&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/auth&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/amish/Projects/inventory&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -88,11 +126,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\amish\IdeaProjects\inventory-management-system\frontend\src\AuthContext" />
       <recent name="C:\Users\amish\IdeaProjects\inventory-management-system\frontend\src\features\product" />
       <recent name="C:\Users\amish\IdeaProjects\inventory-management-system\frontend\src\styles" />
       <recent name="C:\Users\amish\IdeaProjects\inventory-management-system\frontend\src\features\auth" />
       <recent name="C:\Users\amish\IdeaProjects\inventory-management-system\frontend\src\components\common" />
-      <recent name="C:\Users\amish\IdeaProjects\inventory-management-system\frontend\src\components\layout" />
     </key>
   </component>
   <component name="RunManager">
@@ -128,190 +166,13 @@
       <workItem from="1769666547165" duration="11827000" />
       <workItem from="1769791732605" duration="18915000" />
       <workItem from="1769954038540" duration="602000" />
-    </task>
-    <task id="LOCAL-00015" summary="Made global css for headings and paragraphs">
-      <option name="closed" value="true" />
-      <created>1769605528148</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1769605528148</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Made navbar responsive">
-      <option name="closed" value="true" />
-      <created>1769605554341</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1769605554341</updated>
-    </task>
-    <task id="LOCAL-00017" summary="setup">
-      <option name="closed" value="true" />
-      <created>1769608038196</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1769608038196</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Changed the class nome of cards">
-      <option name="closed" value="true" />
-      <created>1769608065074</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1769608065074</updated>
-    </task>
-    <task id="LOCAL-00019" summary="updated the font alignment">
-      <option name="closed" value="true" />
-      <created>1769608119197</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1769608119197</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Changed the background color">
-      <option name="closed" value="true" />
-      <created>1769608134670</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1769608134670</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Added dashboard styling">
-      <option name="closed" value="true" />
-      <created>1769608149585</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1769608149585</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Added type props">
-      <option name="closed" value="true" />
-      <created>1769608203805</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1769608203805</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Added white spacing">
-      <option name="closed" value="true" />
-      <created>1769610510711</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1769610510711</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Added white spacing">
-      <option name="closed" value="true" />
-      <created>1769610536227</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1769610536227</updated>
-    </task>
-    <task id="LOCAL-00025" summary="updated the class name">
-      <option name="closed" value="true" />
-      <created>1769610557700</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1769610557700</updated>
-    </task>
-    <task id="LOCAL-00026" summary="updated the button type">
-      <option name="closed" value="true" />
-      <created>1769610618695</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1769610618695</updated>
-    </task>
-    <task id="LOCAL-00027" summary="updated the styling of product page">
-      <option name="closed" value="true" />
-      <created>1769610652825</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1769610652825</updated>
-    </task>
-    <task id="LOCAL-00028" summary="updated the styling of product page">
-      <option name="closed" value="true" />
-      <created>1769611859455</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1769611859455</updated>
-    </task>
-    <task id="LOCAL-00029" summary="updated the styling of login page">
-      <option name="closed" value="true" />
-      <created>1769611874142</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1769611874142</updated>
-    </task>
-    <task id="LOCAL-00030" summary="Created new signup Page">
-      <option name="closed" value="true" />
-      <created>1769612862920</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1769612862920</updated>
-    </task>
-    <task id="LOCAL-00031" summary="Added Auth Required prop">
-      <option name="closed" value="true" />
-      <created>1769612899168</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1769612899168</updated>
-    </task>
-    <task id="LOCAL-00032" summary="updated the colors of the background">
-      <option name="closed" value="true" />
-      <created>1769612920839</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1769612920839</updated>
-    </task>
-    <task id="LOCAL-00033" summary="updated the styling of login and signup page">
-      <option name="closed" value="true" />
-      <created>1769612944520</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1769612944520</updated>
-    </task>
-    <task id="LOCAL-00034" summary="updated the classname of elements">
-      <option name="closed" value="true" />
-      <created>1769612966356</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1769612966356</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Added white spacing">
-      <option name="closed" value="true" />
-      <created>1769612980578</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1769612980578</updated>
-    </task>
-    <task id="LOCAL-00036" summary="Added styling for App name">
-      <option name="closed" value="true" />
-      <created>1769623944211</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1769623944211</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Added onClick prop">
-      <option name="closed" value="true" />
-      <created>1769623963063</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1769623963063</updated>
+      <workItem from="1770136721251" duration="15195000" />
+      <workItem from="1770264302338" duration="19785000" />
+      <workItem from="1770353314653" duration="7489000" />
+      <workItem from="1770387649812" duration="11024000" />
+      <workItem from="1770437258242" duration="11812000" />
+      <workItem from="1770551697327" duration="16663000" />
+      <workItem from="1770576992423" duration="98000" />
     </task>
     <task id="LOCAL-00038" summary="Added navigation to buttons">
       <option name="closed" value="true" />
@@ -521,38 +382,232 @@
       <option name="project" value="LOCAL" />
       <updated>1769954633242</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Added Application Config for Authentication Provider and Authentication Manager">
+      <option name="closed" value="true" />
+      <created>1770306734609</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1770306734611</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Added Authentication Controller for authentication mappings">
+      <option name="closed" value="true" />
+      <created>1770306776842</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1770306776842</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Added Authentication Request dto for object required for authentication">
+      <option name="closed" value="true" />
+      <created>1770306834407</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1770306834408</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Added Authentication Response dto for object required for authentication response">
+      <option name="closed" value="true" />
+      <created>1770306856412</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1770306856412</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Added Authentication Service for business logic of authentication">
+      <option name="closed" value="true" />
+      <created>1770306890413</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1770306890413</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Added authorization in api header">
+      <option name="closed" value="true" />
+      <created>1770306964983</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1770306964984</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Added authorization in api header">
+      <option name="closed" value="true" />
+      <created>1770306973797</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1770306973797</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Added authorization in api header">
+      <option name="closed" value="true" />
+      <created>1770306982782</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1770306982782</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Added authorization in api header">
+      <option name="closed" value="true" />
+      <created>1770306992167</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1770306992167</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Added authorization in api header">
+      <option name="closed" value="true" />
+      <created>1770307003905</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1770307003905</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Added for authentication filter">
+      <option name="closed" value="true" />
+      <created>1770307027896</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1770307027896</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Added the logic for authentication filter">
+      <option name="closed" value="true" />
+      <created>1770307052852</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1770307052852</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Added spring security and jwt dependencies">
+      <option name="closed" value="true" />
+      <created>1770307092668</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1770307092668</updated>
+    </task>
+    <task id="LOCAL-00077" summary="updated request mapping of product controller">
+      <option name="closed" value="true" />
+      <created>1770307145984</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1770307145984</updated>
+    </task>
+    <task id="LOCAL-00078" summary="added product request dto">
+      <option name="closed" value="true" />
+      <created>1770307188909</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1770307188909</updated>
+    </task>
+    <task id="LOCAL-00079" summary="added product business logic">
+      <option name="closed" value="true" />
+      <created>1770307210821</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1770307210821</updated>
+    </task>
+    <task id="LOCAL-00080" summary="updated the product request dto">
+      <option name="closed" value="true" />
+      <created>1770307236092</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1770307236092</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Added register request dto">
+      <option name="closed" value="true" />
+      <created>1770307258482</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1770307258482</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Added Role Entity">
+      <option name="closed" value="true" />
+      <created>1770307274699</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1770307274699</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Added User Entity">
+      <option name="closed" value="true" />
+      <created>1770307286994</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1770307286994</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Added User Repository for connection with user table in database">
+      <option name="closed" value="true" />
+      <created>1770307333755</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1770307333755</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Added security config for security filter chain">
+      <option name="closed" value="true" />
+      <created>1770307375357</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1770307375357</updated>
+    </task>
+    <task id="LOCAL-00086" summary="uncommited changes">
+      <option name="closed" value="true" />
+      <created>1770307396546</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1770307396546</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="updated the classname of elements" />
-    <MESSAGE value="Added white spacing" />
-    <MESSAGE value="Added styling for App name" />
-    <MESSAGE value="Added onClick prop" />
-    <MESSAGE value="Added navigation to buttons" />
-    <MESSAGE value="Added Product modals for new products" />
-    <MESSAGE value="Made link responsive" />
-    <MESSAGE value="Added forgot password page" />
-    <MESSAGE value="Added styling to forgot-password page" />
-    <MESSAGE value="Added new forgot-password page routes" />
-    <MESSAGE value="Updated the folder structure" />
-    <MESSAGE value="Added logic for getting data" />
-    <MESSAGE value="Added logic for sending summary of product" />
-    <MESSAGE value="Added new row for product description" />
-    <MESSAGE value="Added the logic for search and filter" />
-    <MESSAGE value="Added the logic for filtering product data" />
-    <MESSAGE value="updated the ui" />
-    <MESSAGE value="Added axios" />
-    <MESSAGE value="Updated the button style" />
     <MESSAGE value="Added the logic for getting summary of products" />
     <MESSAGE value="Added the type props" />
     <MESSAGE value="C" />
     <MESSAGE value="Created a common api file" />
     <MESSAGE value="separated databse for local and prod" />
     <MESSAGE value="updated the configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated the configuration" />
+    <MESSAGE value="Added Application Config for Authentication Provider and Authentication Manager" />
+    <MESSAGE value="Added Authentication Controller for authentication mappings" />
+    <MESSAGE value="Added Authentication Request dto for object required for authentication" />
+    <MESSAGE value="Added Authentication Response dto for object required for authentication response" />
+    <MESSAGE value="Added Authentication Service for business logic of authentication" />
+    <MESSAGE value="Added authorization in api header" />
+    <MESSAGE value="Added for authentication filter" />
+    <MESSAGE value="Added the logic for authentication filter" />
+    <MESSAGE value="Added spring security and jwt dependencies" />
+    <MESSAGE value="updated request mapping of product controller" />
+    <MESSAGE value="added product request dto" />
+    <MESSAGE value="added product business logic" />
+    <MESSAGE value="updated the product request dto" />
+    <MESSAGE value="Added register request dto" />
+    <MESSAGE value="Added Role Entity" />
+    <MESSAGE value="Added User Entity" />
+    <MESSAGE value="Added User Repository for connection with user table in database" />
+    <MESSAGE value="Added security config for security filter chain" />
+    <MESSAGE value="uncommited changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="uncommited changes" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/frontend/src/features/auth/LoginPage.jsx</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
