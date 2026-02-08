@@ -1,9 +1,14 @@
 import Navbar from "../../components/layout/Navbar.jsx";
 import Button from "../../components/common/Button.jsx";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
+import {AuthContext} from "../../AuthContext/AuthProvider.jsx";
+import {useContext} from "react";
 
 export default function LoginPage() {
 
+    const {login}=useContext(AuthContext)
+
+    const navigate=useNavigate()
 
     async function handleLogin(e){
         e.preventDefault();
@@ -21,10 +26,11 @@ export default function LoginPage() {
             if(response.ok) {
                 const data=await response.json();
 
-                localStorage.setItem("jwtToken",data.token);
+                localStorage.setItem("token",data.token);
+                localStorage.setItem("role",data.role);
+                login(data.token,data.role)
                 console.log("Login Successful! Token stored");
-
-                window.location.href="/dashboard";
+                navigate("/dashboard");
             }else{
                 console.log("Invalid Credential!")
             }
@@ -34,7 +40,7 @@ export default function LoginPage() {
     }
     return(
         <section className="login-page">
-            <Navbar AuthRequired={false}/>
+            <Navbar/>
             <main className="login-card">
                 <h4>Welcome Back</h4>
                 <p>Please Sign in to your account</p>
