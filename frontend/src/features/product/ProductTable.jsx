@@ -1,8 +1,15 @@
 import api from "../../api/axiosClient.js"
 import {useEffect, useState} from "react";
+import Button from "../../components/common/Button.jsx";
 
 export default function ProductTable({products}){
 
+    const [modals,setShowModals]=useState(false)
+
+
+    function handleAction(item){
+
+    }
 
     return(
         <table className="product-table">
@@ -30,7 +37,7 @@ export default function ProductTable({products}){
                     <td>{item.price}</td>
                     <td>{item.quantity}</td>
                     <td>{item.quantity > 10 ? "In Stock" : (item.quantity === 0 ? "Out of Stock" : "Low Stock")}</td>
-                    <td>...</td>
+                    <td><Button onClick={()=>handleAction(item)}>Update</Button></td>
                 </tr>
                 )
             })}
