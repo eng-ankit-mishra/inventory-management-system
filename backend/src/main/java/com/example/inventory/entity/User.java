@@ -20,13 +20,20 @@ public class User implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @Column(nullable = false)
+    private String name;
     @Column(unique = true,nullable = false)
     private String email;
     @Column(nullable = false)
     private String password;
+    @Column(nullable = false)
+    private boolean emailVerified;
 
     @Enumerated(EnumType.STRING)
     private Role role;
+
+    @Builder.Default
+    private boolean enabled=false;
 
     @Override
     @NonNull
@@ -57,7 +64,7 @@ public class User implements UserDetails {
 
     @Override
     public boolean isEnabled(){
-        return true;
+        return enabled;
     }
 
 
