@@ -54,7 +54,7 @@ export default function Product() {
 
     return (
         <section className="product-list">
-            <Navbar AuthRequired={false}/>
+            <Navbar/>
             <h2 className="product-heading">Product List</h2>
             <ProductController
                 category={category}
