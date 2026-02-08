@@ -13,7 +13,7 @@ export default function Dashboard() {
 
     useEffect(() => {
         const fetchProduct= async ()=>{
-            const token=localStorage.getItem("jwtToken");
+            const token=localStorage.getItem("token");
             if (!token) {
                 navigate("/login");
                 return;
@@ -70,7 +70,7 @@ export default function Dashboard() {
     })
     return(
         <section className={"dashboard"}>
-            <Navbar AuthRequired={false}/>
+            <Navbar/>
             <h2>Dashboard</h2>
             <main className={"dashboard-main"}>
                 {productDetailsCard}
