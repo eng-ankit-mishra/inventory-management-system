@@ -1,7 +1,7 @@
 import Navbar from "../../components/layout/Navbar.jsx";
 import ProductController from "./ProductController.jsx"
 import ProductTable from "./ProductTable.jsx";
-import Pagination from "../../components/common/Pagination.jsx";
+// import Pagination from "../../components/common/Pagination.jsx";
 import { useEffect, useState, useMemo } from "react";
 
 export default function Product() {
@@ -13,7 +13,7 @@ export default function Product() {
     // 1. Fetching Data
     useEffect(() => {
         const fetchData = async () => {
-            const token = localStorage.getItem("jwtToken");
+            const token = localStorage.getItem("token");
             if (!token) return;
 
             try {
@@ -67,8 +67,7 @@ export default function Product() {
             <main>
                 <ProductTable products={filteredProducts}/>
             </main>
-            {/* You'll likely need to pass props here later! */}
-            <Pagination totalItems={filteredProducts.length} />
+            {/*<Pagination totalItems={filteredProducts.length} />*/}
         </section>
     );
 }
