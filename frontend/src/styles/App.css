@@ -281,7 +281,7 @@
 
 .product-heading{
     font-size: 2rem;
-    padding: 20px 0;
+    padding: 5px 0;
 }
 
 .product-table{
@@ -339,13 +339,26 @@
     border-radius: 8px;
 }
 
+.stock-selector option{
+    color:black;
+}
+
 .pagination{
     width: 100%;
+    padding-top: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     gap: 22rem;
+}
+
+.prev-next{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
 }
 
 .login-page{
@@ -527,10 +540,13 @@
     padding: 1.5rem;
     border-radius: 8px;
     width: 22rem;
-
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+}
+
+.product-modals-card label{
+    text-align: left;
 }
 
 .product-modals-card input,
@@ -663,9 +679,6 @@ td {
     vertical-align: middle;
 }
 
-tr:last-child td {
-    border-bottom: none;
-}
 .approve-btn {
     background-color: #28a745 !important; /* Green */
     color: white;
@@ -683,4 +696,106 @@ tr:last-child td {
     color: #777;
     font-style: italic;
     padding: 1rem 0;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dim background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 350px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.modal-content h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn-cancel {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-save {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.update-btn{
+    background-color: green;
+    color: white;
+}
+
+.delete-btn{
+    background-color:red;
+}
+
+
+.pagination-controls {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.page-btn {
+    border: 1px solid #ddd;
+    background: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    border-radius: 4px;
+}
+
+.page-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.page-number {
+    border: 1px solid #ddd;
+    background: white;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.page-number.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
 }
