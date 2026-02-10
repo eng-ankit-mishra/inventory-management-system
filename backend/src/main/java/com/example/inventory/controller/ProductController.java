@@ -43,14 +43,15 @@ public class ProductController {
         return productService.updateProduct(id, request);
     }
 
+    @PatchMapping("/{id}/quantity")
+    public ResponseEntity<Product> updateQuantity(@PathVariable Long id, @RequestParam Integer qty) {
+        return ResponseEntity.ok(productService.updateQuantity(id, qty));
+    }
+
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteProduct(@PathVariable Long id) {
         productService.deleteProduct(id);
         return ResponseEntity.noContent().build();
     }
 
-    @PatchMapping("/{id}/stock")
-    public Product updateStock(@PathVariable Long id, @RequestParam int quantity) {
-        return productService.updateStock(id, quantity);
-    }
 }

@@ -4,20 +4,27 @@ import com.example.inventory.dto.request.ProductRequest;
 import com.example.inventory.dto.response.ProductSummaryResponse;
 import com.example.inventory.entity.Category;
 import com.example.inventory.entity.Product;
+import com.example.inventory.entity.TransactionHistory;
 import com.example.inventory.repository.CategoryRepository;
 import com.example.inventory.repository.ProductRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.inventory.repository.TransactionRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
+
+import java.time.LocalDateTime;
 import java.util.List;
 
+
 @Service
+@RequiredArgsConstructor
 public class ProductService {
 
-    @Autowired
-    private ProductRepository productRepository;
+    private final ProductRepository productRepository;
 
-    @Autowired
-    private CategoryRepository categoryRepository;
+    private final CategoryRepository categoryRepository;
+
+    private final TransactionRepository transactionRepository;
 
     public List<Product> getAllProducts() {
         return productRepository.findAll();
@@ -53,7 +60,7 @@ public class ProductService {
     }
 
     public Product addProduct(ProductRequest request) {
-        Category category = categoryRepository.findById(request.getCategoryId())
+        Category category = categoryRepository.findByName(request.getCategoryName())
                 .orElseThrow(() -> new RuntimeException("Category not found!"));
 
         Product product = new Product();
@@ -64,14 +71,16 @@ public class ProductService {
         product.setDescription(request.getDescription());
         product.setCategory(category);
 
+        logTransaction("PRODUCT ADDED",product.getName());
+
         return productRepository.save(product);
     }
 
     public Product updateProduct(Long id, ProductRequest request) {
         Product existingProduct = getProductById(id); // Re-use our helper method
 
-        if (request.getCategoryId() != null) {
-            Category category = categoryRepository.findById(request.getCategoryId())
+        if (request.getCategoryName() != null) {
+            Category category = categoryRepository.findByName(request.getCategoryName())
                     .orElseThrow(() -> new RuntimeException("Category not found"));
             existingProduct.setCategory(category);
         }
@@ -81,29 +90,47 @@ public class ProductService {
         if (request.getPrice() != null) existingProduct.setPrice(request.getPrice());
         if (request.getDescription() != null) existingProduct.setDescription(request.getDescription());
 
-
+        logTransaction("PRODUCT UPDATED",existingProduct.getName());
 
         return productRepository.save(existingProduct);
+    }
+
+    public Product updateQuantity(Long id,Integer qty){
+        Product product=getProductById(id);
+        if(qty<0){
+            throw new RuntimeException("Quantity cannot be negative");
+        }
+        product.setQuantity(qty);
+        Product updatedproduct= productRepository.save(product);
+
+        logTransaction("UPDATED QUANTITY",updatedproduct.getName());
+
+        return updatedproduct;
     }
 
     public void deleteProduct(Long id) {
         if (!productRepository.existsById(id)) {
             throw new RuntimeException("Product not found");
         }
+        logTransaction("PRODUCT DELETED",getProductById(id).getName());
         productRepository.deleteById(id);
     }
 
-    public Product updateStock(Long id, int quantityChange) {
-        Product product = getProductById(id);
 
-        int newQuantity = product.getQuantity() + quantityChange;
+    public void logTransaction(String action,String productName){
+        String currentUserEmail= SecurityContextHolder.getContext().getAuthentication().getName();
 
-        // Validation: Cannot have negative stock
-        if (newQuantity < 0) {
-            throw new RuntimeException("Insufficient stock! You only have " + product.getQuantity());
-        }
+        TransactionHistory history=TransactionHistory.builder()
+                        .userEmail(currentUserEmail)
+                                .productName(productName)
+                                        .action(action)
+                                                .timestamp(LocalDateTime.now())
 
-        product.setQuantity(newQuantity);
-        return productRepository.save(product);
+                .build();
+
+        transactionRepository.save(history);
+
     }
+
+
 }
