@@ -1,10 +1,16 @@
 package com.example.inventory.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 @Table(name = "categories")
 public class Category {
 
@@ -14,4 +20,6 @@ public class Category {
 
     @Column(nullable = false, unique = true)
     private String name;
+
+    private String description;
 }
