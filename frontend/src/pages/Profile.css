@@ -7,14 +7,14 @@
 .profile-container {
     display: flex;
     justify-content: center;
-    padding-top: 60px; /* Space from navbar */
+    padding-top: 20px; /* Space from navbar */
 }
 
 /* The Main Card */
 .profile-card {
     background: white;
     width: 100%;
-    max-width: 400px; /* Keep it narrow and focused */
+    max-width: 800px; /* Keep it narrow and focused */
     padding: 2.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -109,6 +109,7 @@
     text-align: left;
     border-top: 1px solid #eee;
     padding-top: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 .history-section h3 {
@@ -154,3 +155,4 @@
     font-style: italic;
     font-size: 0.9rem;
 }
+
