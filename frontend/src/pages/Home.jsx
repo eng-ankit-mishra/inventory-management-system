@@ -31,7 +31,7 @@ export default function Home(){
         <section className="home">
             <Navbar />
             <main className="home-page">
-                <h1>Welcome to Inventory management app!</h1>
+                <h1>Welcome to Inventory Management App !</h1>
                 <p>Manage Your Inventory with Ease
                     Track products, monitor stock, and analyze
                     data in one secure place.</p>
