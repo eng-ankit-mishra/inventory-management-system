@@ -1,0 +1,42 @@
+version: '3.8'
+
+services:
+  # 1. Database Service
+  postgres:
+    image: postgres:15-alpine
+    container_name: inventory_db
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=0208
+      - POSTGRES_DB=inventory_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data_final:/var/lib/postgresql/data
+
+  # 2. Backend Service
+  backend:
+    build: ./backend
+    container_name: inventory_backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/inventory_db
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=0208
+
+
+  # 3. Frontend Service
+  frontend:
+    build: ./frontend
+    container_name: inventory_frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+volumes:
+  postgres_data_final:
