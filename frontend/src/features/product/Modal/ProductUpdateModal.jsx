@@ -36,14 +36,12 @@ export default function ProductUpdateModals({ product,onClose }) {
         try {
             console.log("Sending Payload:", product);
 
-            const response = await api.put(`/api/products/${currentProduct.id}`,{
+                    await api.put(`/api/products/${currentProduct.id}`,{
                     ...currentProduct,
                     price: Number(currentProduct.price),
                     quantity: Number(currentProduct.quantity),
                     categoryName: currentProduct.categoryName
                 })
-                const data = await response.json();
-                console.log("Success:", data);
                 onClose();
                 window.location.reload();
 
