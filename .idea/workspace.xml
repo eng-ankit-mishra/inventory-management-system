@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9f1bb70-948e-452a-89e5-29b2dfedace1" name="Changes" comment="setup">
-      <change afterPath="$PROJECT_DIR$/backend/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/Dockerfile" afterDir="false" />
+    <list default="true" id="b9f1bb70-948e-452a-89e5-29b2dfedace1" name="Changes" comment="updated the styling of modals">
+      <change afterPath="$PROJECT_DIR$/frontend/.env.development" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/.env.production" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/config/ApplicationConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,38 +62,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.InventoryApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/amish/Projects/inventory&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_interpreter_path&quot;: &quot;node&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/amish/Projects/inventory/backend/src/main/java/com/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.InventoryApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/amish/Projects/inventory",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/amish/Projects/inventory/backend/src/main/java/com/example/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\amish\IdeaProjects\inventory-management-system\frontend\src\features\product\Modal" />
@@ -151,142 +149,8 @@
       <workItem from="1770576992423" duration="98000" />
       <workItem from="1770613134078" duration="34265000" />
       <workItem from="1770784118189" duration="2737000" />
-    </task>
-    <task id="LOCAL-00055" summary="Added the logic for filtering product data">
-      <option name="closed" value="true" />
-      <created>1769954450018</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1769954450018</updated>
-    </task>
-    <task id="LOCAL-00056" summary="updated the ui">
-      <option name="closed" value="true" />
-      <created>1769954467626</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1769954467626</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Added axios">
-      <option name="closed" value="true" />
-      <created>1769954484575</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1769954484575</updated>
-    </task>
-    <task id="LOCAL-00058" summary="Updated the button style">
-      <option name="closed" value="true" />
-      <created>1769954507148</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1769954507148</updated>
-    </task>
-    <task id="LOCAL-00059" summary="Added the logic for getting summary of products">
-      <option name="closed" value="true" />
-      <created>1769954534697</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1769954534697</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Added the type props">
-      <option name="closed" value="true" />
-      <created>1769954553607</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1769954553607</updated>
-    </task>
-    <task id="LOCAL-00061" summary="Created a common api file">
-      <option name="closed" value="true" />
-      <created>1769954578628</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1769954578628</updated>
-    </task>
-    <task id="LOCAL-00062" summary="separated databse for local and prod">
-      <option name="closed" value="true" />
-      <created>1769954614444</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1769954614444</updated>
-    </task>
-    <task id="LOCAL-00063" summary="updated the configuration">
-      <option name="closed" value="true" />
-      <created>1769954633242</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1769954633242</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Added Application Config for Authentication Provider and Authentication Manager">
-      <option name="closed" value="true" />
-      <created>1770306734609</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1770306734611</updated>
-    </task>
-    <task id="LOCAL-00065" summary="Added Authentication Controller for authentication mappings">
-      <option name="closed" value="true" />
-      <created>1770306776842</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1770306776842</updated>
-    </task>
-    <task id="LOCAL-00066" summary="Added Authentication Request dto for object required for authentication">
-      <option name="closed" value="true" />
-      <created>1770306834407</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1770306834408</updated>
-    </task>
-    <task id="LOCAL-00067" summary="Added Authentication Response dto for object required for authentication response">
-      <option name="closed" value="true" />
-      <created>1770306856412</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1770306856412</updated>
-    </task>
-    <task id="LOCAL-00068" summary="Added Authentication Service for business logic of authentication">
-      <option name="closed" value="true" />
-      <created>1770306890413</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1770306890413</updated>
-    </task>
-    <task id="LOCAL-00069" summary="Added authorization in api header">
-      <option name="closed" value="true" />
-      <created>1770306964983</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1770306964984</updated>
-    </task>
-    <task id="LOCAL-00070" summary="Added authorization in api header">
-      <option name="closed" value="true" />
-      <created>1770306973797</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1770306973797</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Added authorization in api header">
-      <option name="closed" value="true" />
-      <created>1770306982782</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1770306982782</updated>
+      <workItem from="1770789220668" duration="2603000" />
+      <workItem from="1770816011549" duration="2200000" />
     </task>
     <task id="LOCAL-00072" summary="Added authorization in api header">
       <option name="closed" value="true" />
@@ -544,28 +408,149 @@
       <option name="project" value="LOCAL" />
       <updated>1770721895391</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="Added Dockerfile for frontend">
+      <option name="closed" value="true" />
+      <created>1770789445365</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1770789445367</updated>
+    </task>
+    <task id="LOCAL-00105" summary="Added Dockerfile for backend">
+      <option name="closed" value="true" />
+      <created>1770789464225</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1770789464225</updated>
+    </task>
+    <task id="LOCAL-00106" summary="Added Docker compose  for gluing backend and frontned">
+      <option name="closed" value="true" />
+      <created>1770789494731</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1770789494731</updated>
+    </task>
+    <task id="LOCAL-00107" summary="Added ci/cd pipelines">
+      <option name="closed" value="true" />
+      <created>1770789534146</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1770789534146</updated>
+    </task>
+    <task id="LOCAL-00108" summary="Updated the dependencies">
+      <option name="closed" value="true" />
+      <created>1770789548985</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1770789548985</updated>
+    </task>
+    <task id="LOCAL-00109" summary="removed the bug">
+      <option name="closed" value="true" />
+      <created>1770789582865</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1770789582875</updated>
+    </task>
+    <task id="LOCAL-00110" summary="File for production">
+      <option name="closed" value="true" />
+      <created>1770789630874</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1770789630874</updated>
+    </task>
+    <task id="LOCAL-00111" summary="setup">
+      <option name="closed" value="true" />
+      <created>1770789651075</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1770789651075</updated>
+    </task>
+    <task id="LOCAL-00112" summary="Updated the heading of home page">
+      <option name="closed" value="true" />
+      <created>1770790102470</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1770790102470</updated>
+    </task>
+    <task id="LOCAL-00113" summary="Added ci/cd pipeline">
+      <option name="closed" value="true" />
+      <created>1770790359482</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1770790359482</updated>
+    </task>
+    <task id="LOCAL-00114" summary="Updated ci/cd pipeline">
+      <option name="closed" value="true" />
+      <created>1770830048893</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1770830048906</updated>
+    </task>
+    <task id="LOCAL-00115" summary="Updated the dependency version">
+      <option name="closed" value="true" />
+      <created>1770830097521</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1770830097522</updated>
+    </task>
+    <task id="LOCAL-00116" summary="Added ec2 ip for cors">
+      <option name="closed" value="true" />
+      <created>1770830136817</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1770830136817</updated>
+    </task>
+    <task id="LOCAL-00117" summary="update api routes for production">
+      <option name="closed" value="true" />
+      <created>1770830221264</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1770830221264</updated>
+    </task>
+    <task id="LOCAL-00118" summary="update api routes for production">
+      <option name="closed" value="true" />
+      <created>1770830243622</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1770830243622</updated>
+    </task>
+    <task id="LOCAL-00119" summary="Added disable props">
+      <option name="closed" value="true" />
+      <created>1770830294895</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1770830294895</updated>
+    </task>
+    <task id="LOCAL-00120" summary="updated the styling of modals">
+      <option name="closed" value="true" />
+      <created>1770830331183</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1770830331183</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="added product business logic" />
-    <MESSAGE value="updated the product request dto" />
-    <MESSAGE value="Added register request dto" />
-    <MESSAGE value="Added Role Entity" />
-    <MESSAGE value="Added User Entity" />
-    <MESSAGE value="Added User Repository for connection with user table in database" />
-    <MESSAGE value="Added security config for security filter chain" />
-    <MESSAGE value="uncommited changes" />
-    <MESSAGE value="Updated the styling of product page" />
-    <MESSAGE value="Added Authorization in header" />
-    <MESSAGE value="Added Classname props" />
-    <MESSAGE value="Added description column" />
-    <MESSAGE value="updated the routes of category" />
-    <MESSAGE value="updated the dao of category" />
-    <MESSAGE value="Added for initial category" />
     <MESSAGE value="Added Admin rights to add category" />
     <MESSAGE value="changed the path of modals" />
     <MESSAGE value="Added architecture for transactions log" />
@@ -575,8 +560,23 @@
     <MESSAGE value="permitted to access transaction logs" />
     <MESSAGE value="Updated pagination component" />
     <MESSAGE value="Added react icons" />
+    <MESSAGE value="Added Dockerfile for frontend" />
+    <MESSAGE value="Added Dockerfile for backend" />
+    <MESSAGE value="Added Docker compose  for gluing backend and frontned" />
+    <MESSAGE value="Added ci/cd pipelines" />
+    <MESSAGE value="Updated the dependencies" />
+    <MESSAGE value="removed the bug" />
+    <MESSAGE value="File for production" />
     <MESSAGE value="setup" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup" />
+    <MESSAGE value="Updated the heading of home page" />
+    <MESSAGE value="Added ci/cd pipeline" />
+    <MESSAGE value="Updated ci/cd pipeline" />
+    <MESSAGE value="Updated the dependency version" />
+    <MESSAGE value="Added ec2 ip for cors" />
+    <MESSAGE value="update api routes for production" />
+    <MESSAGE value="Added disable props" />
+    <MESSAGE value="updated the styling of modals" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated the styling of modals" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
