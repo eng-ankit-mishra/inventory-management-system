@@ -2,11 +2,13 @@ import Navbar from "../../components/layout/Navbar.jsx";
 import Button from "../../components/common/Button.jsx";
 import {Link, useNavigate} from "react-router-dom";
 import {AuthContext} from "../../AuthContext/AuthProvider.jsx";
-import {useContext} from "react";
+import {useContext,useState} from "react";
+import api from "../../api/axiosClient.js";
 
 export default function LoginPage() {
 
     const {login}=useContext(AuthContext)
+    const [loading,setLoading]=useState(false)
 
     const navigate=useNavigate()
 
@@ -15,27 +17,23 @@ export default function LoginPage() {
         const email=e.target.email.value;
         const password=e.target.password.value;
 
+        setLoading(true);
+
         try{
-            const response=await fetch("http://localhost:8080/api/auth/authenticate",{
-                method:"POST",
-                headers:{
-                    "Content-Type":"application/json"
-                },
-                body:JSON.stringify({email,password})
+            const response=await api.post("/api/auth/authenticate",{
+               email,password
             });
-            if(response.ok) {
-                const data=await response.json();
+                const data=response.data;
 
                 localStorage.setItem("token",data.token);
                 localStorage.setItem("role",data.role);
                 login(data.token,data.role)
-                console.log("Login Successful! Token stored");
+                console.log("Login Successful! Token stored",data);
                 navigate("/dashboard");
-            }else{
-                console.log("Invalid Credential!")
-            }
         }catch(err){
-            console.error("Error",err);
+            console.log("Failed : ",err.response ? err.response.data : err.message);
+        }finally {
+            setLoading(false)
         }
     }
     return(
@@ -49,7 +47,7 @@ export default function LoginPage() {
                     <input name="email" type="email" placeholder={"Enter your email"}/>
                     <label>Password: </label>
                     <input name="password" type="password" placeholder={"Enter your password"}/>
-                    <Button type={"submit"}>Login</Button>
+                    <Button disabled={loading} type={"submit"}>{loading ? "Logging.." :"Login"}</Button>
                 </form>
                 <Link to={"/forget-password"}>Forget your password?</Link>
                 <p className="auth-switch">

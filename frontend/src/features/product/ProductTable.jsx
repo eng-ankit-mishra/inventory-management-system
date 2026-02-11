@@ -8,6 +8,7 @@ import QuantityChangeModal from "./Modal/QuantityChangeModal.jsx";
 
 export default function ProductTable({ products }) {
     const [items, setItems] = useState([]);
+    const [currentItem,setCurrentItem]=useState()
     const [showUpdateModal,setShowUpdateModal]=useState(false)
     const [showQuantityModal,setShowQuantityModal]=useState(false)
     const {user}=useContext(AuthContext)
@@ -62,7 +63,7 @@ export default function ProductTable({ products }) {
                         <div style={{display: "flex", alignItems: "center", gap: "5px"}}>
                             <button
                                 className="qty-btn"
-                                onClick={() => setShowQuantityModal(true)}
+                                onClick={() => {setShowQuantityModal(true);setCurrentItem(item)}}
                                 style={{cursor: "pointer", width: "25px", height: "25px"}}
                             >
                                 +
@@ -74,13 +75,13 @@ export default function ProductTable({ products }) {
 
                             <button
                                 className="qty-btn"
-                                onClick={() => setShowQuantityModal(true)}
+                                onClick={() => {setShowQuantityModal(true);setCurrentItem(item)}}
                                 style={{cursor: "pointer", width: "25px", height: "25px"}}
                             >
                                 -
                             </button>
                             {
-                                showQuantityModal && <QuantityChangeModal product={item} onClose={()=>setShowQuantityModal(false)}/>
+                                showQuantityModal && <QuantityChangeModal product={currentItem} onClose={()=>setShowQuantityModal(false)}/>
                             }
                         </div>
                     </td>

@@ -10,9 +10,8 @@ export default function QuantityChangeModal({product,onClose}){
             await api.patch(`/api/products/${product.id}/quantity?qty=${qty}`);
             window.location.reload()
             onClose();
-        } catch (err) {
-            console.error(err);
-            alert("Update Failed.");
+        } catch(err){
+            console.log("Failed : ",err.response ? err.response.data : err.message);
         }
     }
     return(

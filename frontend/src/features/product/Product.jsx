@@ -3,6 +3,7 @@ import ProductController from "./ProductController.jsx"
 import ProductTable from "./ProductTable.jsx";
 // import Pagination from "../../components/common/Pagination.jsx";
 import { useEffect, useState, useMemo } from "react";
+import api from "../../api/axiosClient.js";
 
 export default function Product() {
     const [products, setProducts] = useState([]);
@@ -17,18 +18,13 @@ export default function Product() {
             if (!token) return;
 
             try {
-                const response = await fetch("http://localhost:8080/api/products", {
-                    headers: { "Authorization": `Bearer ${token}` }
-                });
-                if (response.ok) {
-                    const data = await response.json();
-                    setProducts(data);
-                }
-            } catch (err) {
-                console.error("Fetch error:", err);
+                const response = await api.get("/api/products");
+                    setProducts(response.data);
+            } catch(err){
+                console.log("Failed : ",err.response ? err.response.data : err.message);
             }
         };
-        fetchData();
+        void fetchData();
     }, []);
 
     // 2. Compute Filtered Products (useMemo prevents re-calculating on every unrelated render)

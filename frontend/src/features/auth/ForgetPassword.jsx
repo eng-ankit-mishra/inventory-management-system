@@ -1,32 +1,26 @@
 import Button from "../../components/common/Button.jsx";
 import Navbar from "../../components/layout/Navbar.jsx";
-import {useNavigate} from "react-router-dom"
 import {useState} from "react";
+import api from "../../api/axiosClient.js";
 
 export default function ForgetPassword() {
     const [msg,setMessage]=useState("");
-    const navigate=useNavigate();
+
+    const [loading,setLoading]=useState(false)
+
 
     async function handleSubmit(e){
         e.preventDefault();
         const email=e.target.email.value;
+        setLoading(true)
 
         try{
-            const response=await fetch(`http://localhost:8080/api/auth/forgot-password?email=${email}`,{
-                method:"POST",
-                headers:{
-                    "Content-Type":"application/json"
-                }
-            })
-            if(response.ok){
-                console.log(response)
+                await api.post(`/api/auth/forgot-password?email=${email}`)
                 setMessage("A reset link has been sent.")
-            }else{
-                console.log(response)
-                setMessage("User not found")
-            }
         }catch(err){
-            console.error("Error",err);
+            console.log("Failed : ",err.response ? err.response.data : err.message);
+        }finally {
+            setLoading(false)
         }
 
     }
@@ -45,7 +39,7 @@ export default function ForgetPassword() {
                         type="email"
                         placeholder="Enter your email"
                     />
-                    <Button type={"submit"}>Send Reset Link</Button>
+                    <Button disabled={loading} type={"submit"}>{loading ? "Sending..." : "Send Reset Link" }</Button>
                 </form>
                 <p>{msg}</p>
             </main>

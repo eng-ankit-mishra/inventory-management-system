@@ -4,6 +4,7 @@ import { AuthContext } from "../AuthContext/AuthProvider";
 import { useNavigate } from "react-router-dom";
 import "./Profile.css";
 import Button from "../components/common/Button.jsx";
+import api from "../api/axiosClient.js";
 
 
 export default function Profile() {
@@ -18,28 +19,14 @@ export default function Profile() {
             if (!token) return;
 
             try {
-                const response = await fetch("http://localhost:8080/api/transactions/my-history", {
-                    method: "GET",
-                    headers: {
-                        "Authorization": `Bearer ${token}`,
-                        "Content-Type": "application/json"
-                    }
-                });
-
-                // 2. CHECK STATUS BEFORE PARSING
-                if (response.ok) {
-                    const data = await response.json();
-                    setTransactions(data);
-                } else {
-                    console.warn("Failed to load history. Status:", response.status);
-                    // If 403, it means the backend SecurityConfig isn't updated yet
-                }
+                const response = await api.get("/api/transactions/my-history");
+                    setTransactions(response.data);
             } catch (err) {
-                console.error("Network error:", err);
+                console.error("Failed :", err.response ? err.response.status : err.message);
             }
         }
 
-        fetchHistory();
+        void fetchHistory();
     }, []);
 
     const handleLogout = () => {

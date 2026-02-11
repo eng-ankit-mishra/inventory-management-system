@@ -1,6 +1,7 @@
 import Navbar from "../components/layout/Navbar.jsx";
 import {useNavigate} from "react-router-dom"
 import {useEffect, useState} from "react";
+import api from "../api/axiosClient.js"
 
 export default function Dashboard() {
 
@@ -18,27 +19,17 @@ export default function Dashboard() {
                 navigate("/login");
                 return;
             }
-            try{
-                const response = await fetch("http://localhost:8080/api/products/getSummary",{
-                    method:"GET",
-                    headers:{
-                        "Content-Type":"application/json",
-                        "Authorization": `Bearer ${token}`
-                    }
-                });
-                if (response.ok) {
-                    const data = await response.json();
-                    setProduct(data);
-                    console.log(data)
-                } else {
-                    console.error("Failed:", response.status);
-                }
+            try {
+                const response = await api.get("/api/products/getSummary");
+                const data = response.data;
+                setProduct(data);
+                console.log(data);
 
-            }catch(err){
-                console.error("Error",err);
+            } catch (error) {
+                console.error("Failed:", error.response ? error.response.status : error.message);
             }
         }
-        fetchProduct();
+        void fetchProduct();
     }, []);
 
 

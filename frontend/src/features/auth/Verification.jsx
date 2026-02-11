@@ -1,5 +1,6 @@
 import { useSearchParams} from "react-router-dom";
 import {useEffect, useRef, useState} from "react";
+import api from "../../api/axiosClient.js";
 
 export default function Verification(){
     const [success,setSuccess]=useState("verifying");
@@ -17,20 +18,17 @@ export default function Verification(){
 
         const validateToken=async ()=>{
             try{
-                const response=await fetch(`http://localhost:8080/api/auth/confirm?token=${token}`)
-                if(response.ok){
+                    await api.get(`/api/auth/confirm?token=${token}`)
                     setSuccess("success");
-                }else{
-                    setSuccess("error")
-                }
+
             }catch(err){
-                console.error("Error",err)
                 setSuccess("error")
+                console.log("Failed : ",err.response ? err.response.data : err.message);
             }
         }
 
         if(token){
-            validateToken();
+            void validateToken();
         }
     }, [token]);
 

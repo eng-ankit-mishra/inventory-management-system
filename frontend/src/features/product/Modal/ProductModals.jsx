@@ -1,7 +1,8 @@
 import Button from "../../../components/common/Button.jsx";
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../../AuthContext/AuthProvider.jsx";
-import CategoryModal from "./CategoryModal.jsx"; // Fixed import path if needed
+import CategoryModal from "./CategoryModal.jsx";
+import api from "../../../api/axiosClient.js"; // Fixed import path if needed
 
 export default function ProductModals({ onClose }) {
     const [product, setProduct] = useState({
@@ -22,22 +23,13 @@ export default function ProductModals({ onClose }) {
             const token = localStorage.getItem("token");
             if (!token) return;
             try {
-                const response = await fetch("http://localhost:8080/api/categories", {
-                    method: "GET",
-                    headers: {
-                        "Content-Type": "application/json",
-                        "Authorization": "Bearer " + token
-                    }
-                });
-                if (response.ok) {
-                    const data = await response.json();
-                    setCategories(data);
-                }
+                const response = await api.get("/api/categories")
+                    setCategories(response.data);
             } catch (err) {
                 console.error("Error", err);
             }
         }
-        fetchCategories();
+        void fetchCategories();
     }, []);
 
     // Handle when a new category is added
@@ -59,33 +51,18 @@ export default function ProductModals({ onClose }) {
     async function handleSubmit(e) {
         e.preventDefault();
         try {
-            console.log("Sending Payload:", product); // Debugging
 
-            const response = await fetch("http://localhost:8080/api/products", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "Authorization": `Bearer ${localStorage.getItem("token")}`
-                },
-                body: JSON.stringify({
+                    await api.post("/api/products", {
                     ...product,
                     price: Number(product.price),
                     quantity: Number(product.quantity),
                     // Ensure this string is sent
                     categoryName: product.categoryName
                 })
-            });
-
-            if (response.ok) {
-                const data = await response.json();
-                console.log("Success:", data);
                 onClose();
                 window.location.reload();
-            } else {
-                console.log("Something went wrong", response.status);
-            }
-        } catch (err) {
-            console.error(err);
+        } catch(err){
+            console.log("Failed : ",err.response ? err.response.data : err.message);
         }
     }
 

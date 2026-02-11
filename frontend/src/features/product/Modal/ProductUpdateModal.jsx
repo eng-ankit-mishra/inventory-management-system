@@ -1,5 +1,6 @@
 import Button from "../../../components/common/Button.jsx";
 import {useEffect, useState} from "react";
+import api from "../../../api/axiosClient.js";
 
 export default function ProductUpdateModals({ product,onClose }) {
 
@@ -12,19 +13,10 @@ export default function ProductUpdateModals({ product,onClose }) {
             const token = localStorage.getItem("token");
             if (!token) return;
             try {
-                const response = await fetch("http://localhost:8080/api/categories", {
-                    method: "GET",
-                    headers: {
-                        "Content-Type": "application/json",
-                        "Authorization": "Bearer " + token
-                    }
-                });
-                if (response.ok) {
-                    const data = await response.json();
-                    setCategories(data);
-                }
-            } catch (err) {
-                console.error("Error", err);
+                const response = await api.get("/api/categories")
+                    setCategories(response.data);
+            } catch(err){
+                console.log("Failed : ",err.response ? err.response.data : err.message);
             }
         }
         void fetchCategories();
@@ -44,30 +36,19 @@ export default function ProductUpdateModals({ product,onClose }) {
         try {
             console.log("Sending Payload:", product);
 
-            const response = await fetch(`http://localhost:8080/api/products/${currentProduct.id}`, {
-                method: "PUT",
-                headers: {
-                    "Content-Type": "application/json",
-                    "Authorization": `Bearer ${localStorage.getItem("token")}`
-                },
-                body: JSON.stringify({
+            const response = await api.put(`/api/products/${currentProduct.id}`,{
                     ...currentProduct,
                     price: Number(currentProduct.price),
                     quantity: Number(currentProduct.quantity),
                     categoryName: currentProduct.categoryName
                 })
-            });
-
-            if (response.ok) {
                 const data = await response.json();
                 console.log("Success:", data);
                 onClose();
                 window.location.reload();
-            } else {
-                console.log("Something went wrong", response.status);
-            }
-        } catch (err) {
-            console.error(err);
+
+        } catch(err){
+            console.log("Failed : ",err.response ? err.response.data : err.message);
         }
     }
 

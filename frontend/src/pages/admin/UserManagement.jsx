@@ -1,22 +1,27 @@
 import { useEffect, useState } from "react";
 import Navbar from "../../components/layout/Navbar";
 import Button from "../../components/common/Button.jsx";
+import api from "../../api/axiosClient.js";
 
 export default function UserManagement() {
     const [pendingUsers, setPendingUsers] = useState([]);
     const [msg, setMsg] = useState("");
 
-    // Fetch users who are waiting for approval
     useEffect(() => {
-        fetch("http://localhost:8080/api/admin/pending-users", {
-            headers: {
-                "Authorization": `Bearer ${localStorage.getItem("token")}`
+        const fetchData=async ()=>{
+            try{
+                const response=await api.get("/api/admin/pending-users");
+                setPendingUsers(response.data)
+            }catch(err){
+                console.log("Failed : ",err.response ? err.response.status : err.message);
             }
-        })
-            .then(res => res.json())
-            .then(data => setPendingUsers(data))
-            .catch(err => console.error(err));
-    }, []);
+        }
+
+        void fetchData()
+    }
+
+
+    , []);
 
     const handleApprove = async (id) => {
         try {

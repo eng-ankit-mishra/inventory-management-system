@@ -1,6 +1,7 @@
 import Button from "../../components/common/Button.jsx";
 import {useEffect, useState} from "react";
 import ProductModals from "./Modal/ProductModals.jsx";
+import api from "../../api/axiosClient.js";
 
 export default function ProductController({searchTerm,category,stockStatus,setSearchTerm,setStockStatus,setCategory}) {
     const [modals,setShowModals]=useState(false);
@@ -9,20 +10,10 @@ export default function ProductController({searchTerm,category,stockStatus,setSe
     useEffect(() => {
         const getAllCategory=async ()=>{
             try{
-                const response=await fetch("http://localhost:8080/api/categories",{
-                    method:"GET",
-                    headers:{
-                        "Authorization":"Bearer "+localStorage.getItem("token")
-                    }
-                })
-                if(response.ok){
-                    const data=await response.json();
-                    setAllCategory(data);
-                }else{
-                    console.log("Something went wrong",response.status);
-                }
+                const response=await api.get("/api/categories")
+                    setAllCategory(response.data);
             }catch(err){
-                console.log("Error",err);
+                console.log("Failed : ",err.response ? err.response.data : err.message);
             }
         }
 

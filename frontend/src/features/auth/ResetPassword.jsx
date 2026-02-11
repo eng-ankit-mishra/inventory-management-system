@@ -2,6 +2,7 @@ import Navbar from "../../components/layout/Navbar.jsx";
 import Button from "../../components/common/Button.jsx";
 import {useState} from "react";
 import {useNavigate, useSearchParams} from "react-router-dom";
+import api from "../../api/axiosClient.js";
 
 export default function ResetPassword(){
     const [msg,setMessage]=useState("");
@@ -12,21 +13,14 @@ export default function ResetPassword(){
         e.preventDefault()
         const password=e.target.password.value;
         try{
-           const response=await fetch(`http://localhost:8080/api/auth/reset-password?token=${token}`,{
-               method:"POST",
-               headers:{
-                   "Content-Type": "application/json"
-               },
-               body: JSON.stringify({"newPassword":password})
-           })
-            if(response.ok){
+              await api.post(`http://localhost:8080/api/auth/reset-password?token=${token}`,{
+              "newPassword":password})
                 setMessage("Your password is successfully updated");
                 setTimeout(()=>navigate("/login"),2000)
-            }else{
-                setMessage("Something went wrong!");
-            }
+
         }catch(err){
-            console.error("Error",err);
+            setMessage("Something went wrong!");
+            console.log("Failed : ",err.response ? err.response.data : err.message);
         }
     }
     return(

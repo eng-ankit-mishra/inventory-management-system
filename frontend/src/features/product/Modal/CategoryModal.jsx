@@ -1,4 +1,5 @@
 import { useState } from "react";
+import api from "../../../api/axiosClient.js";
 export default function CategoryModal({ isOpen, onClose, onCategoryAdded }) {
     const [categoryName, setCategoryName] = useState("");
     const [description, setDescription] = useState("");
@@ -8,25 +9,16 @@ export default function CategoryModal({ isOpen, onClose, onCategoryAdded }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("http://localhost:8080/api/create-category", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "Authorization": `Bearer ${localStorage.getItem("token")}`
-                },
-                body: JSON.stringify({ name: categoryName, description })
-            });
+                await api.post("/api/create-category", {
+                    name: categoryName, description })
 
-            if (response.ok) {
                 onCategoryAdded({ name: categoryName, description }); // Pass data back to parent
                 setCategoryName("");
                 setDescription("");
                 onClose();
-            } else {
-                alert("Failed to add category");
-            }
-        } catch (error) {
-            console.error("Error:", error);
+
+        } catch(err){
+            console.log("Failed : ",err.response ? err.response.data : err.message);
         }
     };
 
