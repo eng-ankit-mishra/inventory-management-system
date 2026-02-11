@@ -1,6 +1,6 @@
-export default function Button({children,type="submit",style="primary",onClick,className=""}){
+export default function Button({children,type="submit",disabled=false,style="primary",onClick,className=""}){
     return(
-        <button onClick={onClick} type={type} className={`btn-${style} ${className}`}>
+        <button disabled={disabled} onClick={onClick} type={type} className={`btn-${style} ${className}`}>
             {children}
         </button>
     )
