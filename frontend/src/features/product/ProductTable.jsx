@@ -45,7 +45,7 @@ export default function ProductTable({ products }) {
             </thead>
 
             <tbody>
-            {items.map((item,index) => (
+            {items.map((item) => (
                 <tr key={item.id} className="table-data">
                     <td>{item.id}</td>
                     <td>{item.name}</td>
