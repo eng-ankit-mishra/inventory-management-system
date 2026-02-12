@@ -5,6 +5,10 @@ import com.example.inventory.dto.response.ProductSummaryResponse;
 import com.example.inventory.entity.Product;
 import com.example.inventory.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,9 +21,17 @@ public class ProductController {
     @Autowired
     private ProductService productService;
 
+
+
     @GetMapping
-    public List<Product> getAll() {
-        return productService.getAllProducts();
+    public Page<Product> getProducts(
+            @RequestParam(defaultValue = "0") int pageNo,
+            @RequestParam(defaultValue = "8") int pageSize,
+            @RequestParam(required = false) String search,
+            @RequestParam(required = false) String category,
+            @RequestParam(required = false) String stockStatus
+    ) {
+        return productService.getAllProducts(search, category, stockStatus, PageRequest.of(pageNo, pageSize));
     }
 
     @GetMapping("/{id}")

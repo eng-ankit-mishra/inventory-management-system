@@ -33,7 +33,7 @@ export default function ProductTable({ products }) {
         <table className="product-table">
             <thead>
             <tr>
-                <th>S No.</th>
+                <th>Id</th>
                 <th>Product Name</th>
                 <th>Sku</th>
                 <th>Category</th>
@@ -47,7 +47,7 @@ export default function ProductTable({ products }) {
             <tbody>
             {items.map((item,index) => (
                 <tr key={item.id} className="table-data">
-                    <td>{index+1}</td>
+                    <td>{item.id}</td>
                     <td>{item.name}</td>
                     <td>{item.sku}</td>
                     {/* Handle cases where category is an Object OR a String */}

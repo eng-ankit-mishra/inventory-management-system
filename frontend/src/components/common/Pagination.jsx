@@ -1,22 +1,21 @@
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-//import "./Pagination.css"; // Assuming you have styles
 
 export default function Pagination({
                                        totalItems,
-                                       itemsPerPage,
-                                       currentPage,
-                                       onPageChange
+                                       itemsPerPage = 8,
+                                       currentPage, // <--- 1. NEW PROP: Receive current page from parent
+                                       onPageChange,
                                    }) {
-    // 1. Calculate Total Pages
+    // 2. REMOVED internal useState. We rely entirely on props.
+
     const totalPages = Math.ceil(totalItems / itemsPerPage);
 
-    // 2. Calculate "Showing X-Y of Z"
-    const startItem = (currentPage - 1) * itemsPerPage + 1;
-    const endItem = Math.min(currentPage * itemsPerPage, totalItems);
+    // Logic checks remain the same
+    const startItem = currentPage * itemsPerPage + 1;
+    const endItem = Math.min((currentPage + 1) * itemsPerPage, totalItems);
 
-    // 3. Generate Page Numbers Array [1, 2, 3...]
     const pageNumbers = [];
-    for (let i = 1; i <= totalPages; i++) {
+    for (let i = 0; i < totalPages; i++) {
         pageNumbers.push(i);
     }
 
@@ -32,20 +31,23 @@ export default function Pagination({
                 {/* PREV BUTTON */}
                 <button
                     className="page-btn"
+                    // 3. Just call the prop function. No local state to update.
                     onClick={() => onPageChange(currentPage - 1)}
-                    disabled={currentPage === 1}
+                    disabled={currentPage === 0}
                 >
                     <FaArrowLeft /> Prev
                 </button>
 
-                {/* PAGE NUMBERS */}
+                {/* NUMBER BUTTONS */}
                 {pageNumbers.map((number) => (
                     <button
                         key={number}
+                        // 4. Use the prop to check active state
                         className={`page-number ${currentPage === number ? "active" : ""}`}
                         onClick={() => onPageChange(number)}
                     >
-                        {number}
+                        {/* 5. Display (number + 1) so users see "1" instead of "0" */}
+                        {number + 1}
                     </button>
                 ))}
 
@@ -53,7 +55,7 @@ export default function Pagination({
                 <button
                     className="page-btn"
                     onClick={() => onPageChange(currentPage + 1)}
-                    disabled={currentPage === totalPages}
+                    disabled={currentPage === totalPages - 1}
                 >
                     Next <FaArrowRight />
                 </button>

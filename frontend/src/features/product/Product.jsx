@@ -1,69 +1,90 @@
 import Navbar from "../../components/layout/Navbar.jsx";
-import ProductController from "./ProductController.jsx"
+import ProductController from "./ProductController.jsx";
 import ProductTable from "./ProductTable.jsx";
-// import Pagination from "../../components/common/Pagination.jsx";
-import { useEffect, useState, useMemo } from "react";
+import Pagination from "../../components/common/Pagination.jsx";
+import { useEffect, useState } from "react";
 import api from "../../api/axiosClient.js";
 
 export default function Product() {
+
     const [products, setProducts] = useState([]);
+    const [totalItems, setTotalItems] = useState(0);
+
+    const [pageNo, setPageNo] = useState(0);
     const [searchTerm, setSearchTerm] = useState("");
     const [category, setCategory] = useState("ALL");
     const [stockStatus, setStockStatus] = useState("ALL");
 
-    // 1. Fetching Data
-    useEffect(() => {
-        const fetchData = async () => {
-            const token = localStorage.getItem("token");
-            if (!token) return;
+    const [debouncedSearch, setDebouncedSearch] = useState(searchTerm);
 
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setDebouncedSearch(searchTerm);
+            setPageNo(0);
+        }, 500);
+        return () => clearTimeout(timer);
+    }, [searchTerm]);
+
+    useEffect(() => {
+        const fetchProducts = async () => {
             try {
-                const response = await api.get("/api/products");
-                    setProducts(response.data);
-            } catch(err){
-                console.log("Failed : ",err.response ? err.response.data : err.message);
+                // Construct Query Params
+                const params = {
+                    pageNo: pageNo,
+                    pageSize: 8,
+                    search: debouncedSearch || undefined,
+                    category: category !== "ALL" ? category : undefined,
+                    stockStatus: stockStatus !== "ALL" ? stockStatus : undefined
+                };
+
+                const response = await api.get("/api/products", { params });
+
+                console.log(response.data)
+                setProducts(response.data.content);
+                setTotalItems(response.data.totalElements);
+
+            } catch (err) {
+                console.error("Failed to load products:", err);
             }
         };
-        void fetchData();
-    }, []);
 
-    // 2. Compute Filtered Products (useMemo prevents re-calculating on every unrelated render)
-    const filteredProducts = useMemo(() => {
-        return products.filter(p => {
-            // Search filter
-            const matchesSearch = searchTerm === "" ||
-                p.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                p.sku?.toLowerCase().includes(searchTerm.toLowerCase());
+        void fetchProducts();
+    }, [pageNo, debouncedSearch, category, stockStatus]);
 
-            // Category filter
-            const matchesCategory = category === "ALL" || p.category?.name === category;
+    const handleCategoryChange = (newCat) => {
+        setCategory(newCat);
+        setPageNo(0);
+    };
 
-            // Stock filter
-            let matchesStock = true;
-            if (stockStatus === "IN_STOCK") matchesStock = p.quantity >= 10;
-            else if (stockStatus === "LOW_STOCK") matchesStock = p.quantity > 0 && p.quantity < 10;
-            else if (stockStatus === "OUT_OF_STOCK") matchesStock = p.quantity === 0;
-
-            return matchesSearch && matchesCategory && matchesStock;
-        });
-    }, [products, searchTerm, category, stockStatus]);
+    const handleStockChange = (newStatus) => {
+        setStockStatus(newStatus);
+        setPageNo(0);
+    };
 
     return (
         <section className="product-list">
-            <Navbar/>
+            <Navbar />
             <h2 className="product-heading">Product List</h2>
+
             <ProductController
                 category={category}
-                setCategory={setCategory}
+                setCategory={handleCategoryChange}
                 searchTerm={searchTerm}
                 setSearchTerm={setSearchTerm}
-                setStockStatus={setStockStatus}
                 stockStatus={stockStatus}
+                setStockStatus={handleStockChange}
             />
+
             <main>
-                <ProductTable products={filteredProducts}/>
+                <ProductTable products={products} />
             </main>
-            {/*<Pagination totalItems={filteredProducts.length} />*/}
+
+            <Pagination
+                currentPage={pageNo}
+                itemsPerPage={8}
+                totalItems={totalItems}
+                onPageChange={setPageNo}
+            />
         </section>
     );
 }
