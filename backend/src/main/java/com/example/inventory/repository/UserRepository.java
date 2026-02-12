@@ -10,7 +10,7 @@ import org.springframework.data.jpa.repository.Query;
 import java.util.List;
 import java.util.Optional;
 
-public interface UserRepository extends JpaRepository<User,Long> {
+public interface UserRepository extends JpaRepository<User,Long>  {
 
     Optional<User> findByEmail(String email);
 
@@ -22,4 +22,5 @@ public interface UserRepository extends JpaRepository<User,Long> {
     int enableUser(String email);
 
     List<User> findByEmailVerifiedTrueAndEnabledFalse();
+    List<User> findByEnabledTrue();
 }
