@@ -28,6 +28,15 @@ public class AdminController {
         return ResponseEntity.ok(pending);
     }
 
+    @GetMapping("/active-users")
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<List<User>> getActiveUsers(){
+        List<User> active=userRepository.findByEnabledTrue();
+        return ResponseEntity.ok(active);
+    }
+
+
+
     @PutMapping("/approve/{userId}")
     @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<String> approveUser(@PathVariable Long userId){
