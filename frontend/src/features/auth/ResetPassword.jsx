@@ -13,7 +13,7 @@ export default function ResetPassword(){
         e.preventDefault()
         const password=e.target.password.value;
         try{
-              await api.post(`http://localhost:8080/api/auth/reset-password?token=${token}`,{
+              await api.post(`/api/auth/reset-password?token=${token}`,{
               "newPassword":password})
                 setMessage("Your password is successfully updated");
                 setTimeout(()=>navigate("/login"),2000)
