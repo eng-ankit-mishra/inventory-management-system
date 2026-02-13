@@ -58,7 +58,7 @@ public class AuthenticationService {
         confirmationTokenService.saveConfirmationToken(confirmationToken);
 
         // 4. Send Verification Email
-        String link = "http://localhost:5173/verify?token=" + token;
+        String link = "http://13.201.45.24/verify?token=" + token;
         String emailContent=emailService.buildEmail(request.getEmail(),link,"Confirm Your Mail");
         emailService.send(request.getEmail(),emailContent);
 
@@ -123,7 +123,7 @@ public class AuthenticationService {
         confirmationTokenService.saveConfirmationToken(resetToken);
 
         // Send Reset Email
-        String link = "http://localhost:5173/reset-password?token=" + token;
+        String link = "http://13.201.45.24/reset-password?token=" + token;
         String emailContent=emailService.buildEmail(email,link,"Reset Your Password");
         emailService.send(email,emailContent);
 
