@@ -15,13 +15,13 @@
       </jdbc-additional-properties>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
-    <data-source source="LOCAL" name="inventory_db@postgres" uuid="729bc801-b119-44c0-bbf7-5ec9cf0d0927">
+    <data-source source="LOCAL" name="inventory_db@13.201.45.24" uuid="729bc801-b119-44c0-bbf7-5ec9cf0d0927">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
       <remarks>$PROJECT_DIR$/backend/src/main/resources/application-prod.properties</remarks>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://postgres:5432/inventory_db</jdbc-url>
+      <jdbc-url>jdbc:postgresql://13.201.45.24:5432/inventory_db</jdbc-url>
       <jdbc-additional-properties>
         <property name="com.intellij.clouds.kubernetes.db.host.port" />
         <property name="com.intellij.clouds.kubernetes.db.enabled" value="false" />

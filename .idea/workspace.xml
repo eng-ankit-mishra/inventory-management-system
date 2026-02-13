@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9f1bb70-948e-452a-89e5-29b2dfedace1" name="Changes" comment="Added the pagination logic">
-      <change afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/db-forest-config.xml" afterDir="false" />
+    <list default="true" id="b9f1bb70-948e-452a-89e5-29b2dfedace1" name="Changes" comment="updated prod file">
+      <change afterPath="$PROJECT_DIR$/backend/.env" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/frontend/.env.development" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/frontend/.env.production" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/deploy.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/deploy.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/inventory/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,10 +48,10 @@
     &quot;accountId&quot;: &quot;79c871fc-46f6-4ff2-88b2-30c3ff6d1dca&quot;
   }
 }</component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -100,6 +101,11 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2025.3.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
@@ -115,7 +121,10 @@
     <configuration name="InventoryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="ACTIVE_PROFILES" value="local" />
       <envs>
+        <env name="SMTP_HOST" value="smtp.gmail.com" />
         <env name="SMTP_PASSWORD" value="fxqg bpxb aayu vsxs" />
+        <env name="SMTP_PORT" value="587" />
+        <env name="SMTP_USERNAME" value="developer.ankitmishra@gmail.com" />
       </envs>
       <module name="backend" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.inventory.InventoryApplication" />
@@ -159,47 +168,8 @@
       <workItem from="1770789220668" duration="2603000" />
       <workItem from="1770816011549" duration="2200000" />
       <workItem from="1770870182721" duration="12882000" />
-      <workItem from="1770900891302" duration="3444000" />
-    </task>
-    <task id="LOCAL-00078" summary="added product request dto">
-      <option name="closed" value="true" />
-      <created>1770307188909</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1770307188909</updated>
-    </task>
-    <task id="LOCAL-00079" summary="added product business logic">
-      <option name="closed" value="true" />
-      <created>1770307210821</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1770307210821</updated>
-    </task>
-    <task id="LOCAL-00080" summary="updated the product request dto">
-      <option name="closed" value="true" />
-      <created>1770307236092</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1770307236092</updated>
-    </task>
-    <task id="LOCAL-00081" summary="Added register request dto">
-      <option name="closed" value="true" />
-      <created>1770307258482</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1770307258482</updated>
-    </task>
-    <task id="LOCAL-00082" summary="Added Role Entity">
-      <option name="closed" value="true" />
-      <created>1770307274699</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1770307274699</updated>
+      <workItem from="1770900891302" duration="9797000" />
+      <workItem from="1770963463934" duration="2132000" />
     </task>
     <task id="LOCAL-00083" summary="Added User Entity">
       <option name="closed" value="true" />
@@ -553,17 +523,56 @@
       <option name="project" value="LOCAL" />
       <updated>1770904170861</updated>
     </task>
-    <option name="localTasksCounter" value="127" />
+    <task id="LOCAL-00127" summary="Added the logic for fetching active user">
+      <option name="closed" value="true" />
+      <created>1770904506041</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1770904506041</updated>
+    </task>
+    <task id="LOCAL-00128" summary="setup">
+      <option name="closed" value="true" />
+      <created>1770904535884</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1770904535884</updated>
+    </task>
+    <task id="LOCAL-00129" summary="remove unreachable variable">
+      <option name="closed" value="true" />
+      <created>1770904766424</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1770904766439</updated>
+    </task>
+    <task id="LOCAL-00130" summary="just for new start">
+      <option name="closed" value="true" />
+      <created>1770905064896</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1770905064898</updated>
+    </task>
+    <task id="LOCAL-00131" summary="updated prod file">
+      <option name="closed" value="true" />
+      <created>1770909935936</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1770909935939</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName=".env" />
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated the styling" />
-    <MESSAGE value="permitted to access transaction logs" />
-    <MESSAGE value="Updated pagination component" />
-    <MESSAGE value="Added react icons" />
     <MESSAGE value="Added Dockerfile for frontend" />
     <MESSAGE value="Added Dockerfile for backend" />
     <MESSAGE value="Added Docker compose  for gluing backend and frontned" />
@@ -571,7 +580,6 @@
     <MESSAGE value="Updated the dependencies" />
     <MESSAGE value="removed the bug" />
     <MESSAGE value="File for production" />
-    <MESSAGE value="setup" />
     <MESSAGE value="Updated the heading of home page" />
     <MESSAGE value="Added ci/cd pipeline" />
     <MESSAGE value="Updated ci/cd pipeline" />
@@ -585,7 +593,12 @@
     <MESSAGE value="Updated the api" />
     <MESSAGE value="updated the logic of fetching active users" />
     <MESSAGE value="Added the pagination logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the pagination logic" />
+    <MESSAGE value="Added the logic for fetching active user" />
+    <MESSAGE value="setup" />
+    <MESSAGE value="remove unreachable variable" />
+    <MESSAGE value="just for new start" />
+    <MESSAGE value="updated prod file" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated prod file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
