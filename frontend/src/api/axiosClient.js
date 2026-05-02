@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // 1. Create the instance (as we discussed before)
-const BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8080";
+const BASE_URL = import.meta.env.VITE_API_URL || "https://inventory-management-system-r3j3.onrender.com/";
 
 const api = axios.create({
     baseURL: BASE_URL,
