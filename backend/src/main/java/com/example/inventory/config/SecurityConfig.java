@@ -48,7 +48,7 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource(){
         CorsConfiguration configuration=new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("http://localhost:5173","http://13.201.45.24/"));
+        configuration.setAllowedOrigins(List.of("https://managerinventory.netlify.app/","http://localhost:5173","http://13.201.45.24/"));
         configuration.setAllowedMethods(List.of("GET","POST","PUT","DELETE","PATCH","OPTIONS"));
         configuration.setAllowedHeaders(List.of("Authorization","Content-Type"));
 
